@@ -1,0 +1,5 @@
+@mixin  horizontal($horizontal) {
+    justify-content: $horizontal;
+}
+
+// @include horizontal (space-between);

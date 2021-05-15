@@ -4,9 +4,9 @@
     padding: 42px 31px 105px 30px;
     color: $white_color;
     .aside-title{
+        display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        align-items: center;
         h3{
             font-family: 'AvenirBlack';
             font-size: 24px;
@@ -42,8 +42,7 @@
         .aside-nav-li{
             margin-bottom: 50px;
             .aside-nav-a{
-                display: flex;
-                align-items: center;
+                @include align-flex-with-wrap(flex, center, wrap);
                 img{
                     margin-left: 30px;
                 }
@@ -71,8 +70,7 @@
         font-size: 12px;
     }
     .aside-following-a{
-        display: flex;
-        align-items: center;
+        @include align-flex-with-wrap(flex, center, wrap);
         img{
             margin-left: 30px;
         }

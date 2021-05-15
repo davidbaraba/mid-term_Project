@@ -2,4 +2,10 @@
     justify-content: $horizontal;
 }
 
+@mixin align-flex-with-wrap($prop, $vert, $wrapProp) {
+    display: $prop;
+    align-items: $vert;
+    flex-wrap: $wrapProp;
+}
+
 // @include horizontal (space-between);

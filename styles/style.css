@@ -69,9 +69,9 @@ a {
   padding: 42px 31px 105px 30px;
   color: #FFFFFF; }
   .aside .aside-title {
+    display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center; }
+    flex-wrap: wrap; }
     .aside .aside-title h3 {
       font-family: 'AvenirBlack';
       font-size: 24px; }
@@ -100,7 +100,8 @@ a {
       margin-bottom: 50px; }
       .aside .aside-nav-div .aside-nav-li .aside-nav-a {
         display: flex;
-        align-items: center; }
+        align-items: center;
+        flex-wrap: wrap; }
         .aside .aside-nav-div .aside-nav-li .aside-nav-a img {
           margin-left: 30px; }
         .aside .aside-nav-div .aside-nav-li .aside-nav-a h6 {
@@ -121,7 +122,8 @@ a {
     font-size: 12px; }
   .aside .aside-following-a {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: wrap; }
     .aside .aside-following-a img {
       margin-left: 30px; }
     .aside .aside-following-a h6 {

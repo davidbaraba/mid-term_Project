@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'AvenirMedium';
+    src: url('../fonts/fonts/AvenirMedium.eot');
+    src: url('../fonts/fonts/AvenirMedium.eot') format('embedded-opentype'),
+         url('../fonts/fonts/AvenirMedium.woff2') format('woff2'),
+         url('../fonts/fonts/AvenirMedium.woff') format('woff'),
+         url('../fonts/fonts/AvenirMedium.ttf') format('truetype'),
+         url('../fonts/fonts/AvenirMedium.svg#AvenirMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'AvenirHeavy';
+    src: url('../fonts/fonts/AvenirHeavy.eot');
+    src: url('../fonts/fonts/AvenirHeavy.eot') format('embedded-opentype'),
+         url('../fonts/fonts/AvenirHeavy.woff2') format('woff2'),
+         url('../fonts/fonts/AvenirHeavy.woff') format('woff'),
+         url('../fonts/fonts/AvenirHeavy.ttf') format('truetype'),
+         url('../fonts/fonts/AvenirHeavy.svg#AvenirHeavy') format('svg');
+}
+
+@font-face {
+    font-family: 'AvenirBook';
+    src: url('../fonts/fonts/AvenirBook.eot');
+    src: url('../fonts/fonts/AvenirBook.eot') format('embedded-opentype'),
+         url('../fonts/fonts/AvenirBook.woff2') format('woff2'),
+         url('../fonts/fonts/AvenirBook.woff') format('woff'),
+         url('../fonts/fonts/AvenirBook.ttf') format('truetype'),
+         url('../fonts/fonts/AvenirBook.svg#AvenirBook') format('svg');
+}
+
+@font-face {
+    font-family: 'AvenirBlack';
+    src: url('../fonts/fonts/AvenirBlack.eot');
+    src: url('../fonts/fonts/AvenirBlack.eot') format('embedded-opentype'),
+         url('../fonts/fonts/AvenirBlack.woff2') format('woff2'),
+         url('../fonts/fonts/AvenirBlack.woff') format('woff'),
+         url('../fonts/fonts/AvenirBlack.ttf') format('truetype'),
+         url('../fonts/fonts/AvenirBlack.svg#AvenirBlack') format('svg');
+}
+
+@font-face {
+    font-family: 'AvenirRegular';
+    src: url('../fonts/fonts/AvenirRegular.eot');
+    src: url('../fonts/fonts/AvenirRegular.eot') format('embedded-opentype'),
+         url('../fonts/fonts/AvenirRegular.woff2') format('woff2'),
+         url('../fonts/fonts/AvenirRegular.woff') format('woff'),
+         url('../fonts/fonts/AvenirRegular.ttf') format('truetype'),
+         url('../fonts/fonts/AvenirRegular.svg#AvenirRegular') format('svg');
+}

@@ -53,6 +53,35 @@
                     border-radius:  12px;
                     color: $white_color;
                 }
+                .nav-right{
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .nav-burger{
+                width: 26px;
+                height: 11px;
+                position: relative;
+                cursor: pointer;
+                margin-left: 10px;
+                display: none;
+                .nav-divider{
+                    width: 26px;
+                    height: 1px;
+                    background-color: $black_color;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                    left: 50%;
+                }
+                .nav-divider:nth-child(1){
+                    top: 0;
+                }
+                .nav-divider:nth-child(2){
+                    top: 50%;
+                }
+                .nav-divider:nth-child(3){
+                    top: 100%;
+                }
             }
         }
     }

@@ -4,6 +4,7 @@
     background-color: $black_color;
     padding: 42px 31px 105px 30px;
     color: $white_color;
+    box-sizing: border-box;
     .aside-title{
         justify-content: space-between;
         flex-wrap: wrap;

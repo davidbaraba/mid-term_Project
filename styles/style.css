@@ -38,34 +38,6 @@ table {
 a {
   text-decoration: none; }
 
-@media (max-width: 1460px) {
-  .search-box input {
-    padding-right: 0px !important; } }
-
-@media (max-width: 1120px) {
-  .container-flex {
-    justify-content: center !important; }
-    .container-flex .nav {
-      margin-top: 10px; } }
-
-@media (max-width: 960px) {
-  .search-box {
-    display: none; }
-  .last .nav-a {
-    padding: 5px 10px !important; } }
-
-@media (max-width: 700px) {
-  .nav {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center; }
-    .nav .nav-right {
-      display: none !important; }
-    .nav .nav-burger {
-      display: flex !important; } }
-
 @font-face {
   font-family: 'AvenirMedium';
   src: url("../../fonts/AvenirMedium.eot");
@@ -116,7 +88,8 @@ a {
   width: 100%;
   background-color: #222222;
   padding: 42px 31px 105px 30px;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  box-sizing: border-box; }
   .aside .aside-title {
     justify-content: space-between;
     flex-wrap: wrap; }
@@ -186,19 +159,23 @@ a {
     margin-left: 30px; }
 
 .main {
-  width: 100%;
-  padding-left: 25px;
-  padding-right: 90px; }
+  width: 100%; }
   .main .header {
     border-bottom: 1px solid #AFAFAF;
-    padding: 30px 0; }
+    padding: 30px 90px 30px 25px; }
     .main .header .container-flex {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center; }
+      @media (max-width: 1120px) {
+        .main .header .container-flex {
+          justify-content: center; } }
       .main .header .container-flex .search-box {
         position: relative; }
+        @media (max-width: 960px) {
+          .main .header .container-flex .search-box {
+            display: none; } }
       .main .header .container-flex .search-box input {
         background-color: #E7E7E7;
         border: none;
@@ -206,52 +183,110 @@ a {
         padding: 18px 272px 18px 20px;
         font-family: 'AvenirHeavy';
         font-size: 14px; }
+        @media (max-width: 1460px) {
+          .main .header .container-flex .search-box input {
+            padding-right: 0px; } }
       .main .header .container-flex .search-box a {
         position: absolute;
         top: 18px;
         right: 15px; }
-      .main .header .container-flex .nav-ul {
+      @media (max-width: 1120px) {
+        .main .header .container-flex .nav {
+          margin-top: 10px; } }
+      @media (max-width: 700px) {
+        .main .header .container-flex .nav {
+          flex-direction: row;
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          align-items: center; } }
+      .main .header .container-flex .nav .nav-ul {
         display: flex;
         align-items: center; }
-        .main .header .container-flex .nav-ul .nav-li:not(.first) {
+        .main .header .container-flex .nav .nav-ul .nav-li:not(.first) {
           margin-left: 30px; }
-          .main .header .container-flex .nav-ul .nav-li:not(.first) .allipse {
+          .main .header .container-flex .nav .nav-ul .nav-li:not(.first) .allipse {
             position: absolute;
             top: -7px;
             right: 0; }
-          .main .header .container-flex .nav-ul .nav-li:not(.first) .allipse-second {
+          .main .header .container-flex .nav .nav-ul .nav-li:not(.first) .allipse-second {
             position: absolute;
             top: -10px;
             right: 0; }
-        .main .header .container-flex .nav-ul .first .nav-a {
+        .main .header .container-flex .nav .nav-ul .first .nav-a {
           font-family: 'AvenirHeavy';
           font-size: 14px;
           color: #FF2288; }
-        .main .header .container-flex .nav-ul .last .nav-a {
+        .main .header .container-flex .nav .nav-ul .last .nav-a {
           padding: 20px 40px;
           background-color: #FF2288;
           border-radius: 12px;
           color: #FFFFFF; }
-        .main .header .container-flex .nav-ul .nav-right {
+          @media (max-width: 960px) {
+            .main .header .container-flex .nav .nav-ul .last .nav-a {
+              padding: 5px 10px !important; } }
+        .main .header .container-flex .nav .nav-ul .nav-right {
           display: flex;
           align-items: center; }
-      .main .header .container-flex .nav-burger {
+          @media (max-width: 700px) {
+            .main .header .container-flex .nav .nav-ul .nav-right {
+              display: none; } }
+      .main .header .container-flex .nav .nav-burger {
         width: 26px;
         height: 11px;
         position: relative;
         cursor: pointer;
         margin-left: 10px;
         display: none; }
-        .main .header .container-flex .nav-burger .nav-divider {
+        @media (max-width: 700px) {
+          .main .header .container-flex .nav .nav-burger {
+            display: flex; } }
+        .main .header .container-flex .nav .nav-burger .nav-divider {
           width: 26px;
           height: 1px;
           background-color: #222222;
           position: absolute;
           transform: translate(-50%, -50%);
           left: 50%; }
-        .main .header .container-flex .nav-burger .nav-divider:nth-child(1) {
+        .main .header .container-flex .nav .nav-burger .nav-divider:nth-child(1) {
           top: 0; }
-        .main .header .container-flex .nav-burger .nav-divider:nth-child(2) {
+        .main .header .container-flex .nav .nav-burger .nav-divider:nth-child(2) {
           top: 50%; }
-        .main .header .container-flex .nav-burger .nav-divider:nth-child(3) {
+        .main .header .container-flex .nav .nav-burger .nav-divider:nth-child(3) {
           top: 100%; }
+
+.post-nav-div {
+  margin: 40px 0; }
+  .post-nav-div .post-container {
+    max-width: 1231px;
+    width: 100%;
+    margin: 0 auto; }
+    .post-nav-div .post-container .post-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .post-nav-div .post-container .post-nav .post-nav-ul {
+        display: flex; }
+        .post-nav-div .post-container .post-nav .post-nav-ul .post-nav-li {
+          padding-right: 50px; }
+          .post-nav-div .post-container .post-nav .post-nav-ul .post-nav-li .post-nav-a {
+            font-size: 16px;
+            color: #222222;
+            font-family: 'AvenirBook'; }
+          .post-nav-div .post-container .post-nav .post-nav-ul .post-nav-li .post-nav-a.first {
+            background-color: #F2F2F2;
+            padding: 20px;
+            border-radius: 12px;
+            font-family: 'AvenirHeavy'; }
+      .post-nav-div .post-container .post-nav .filter-box {
+        display: flex;
+        align-items: center;
+        border-radius: 12px;
+        border: 1px solid #D8D8D8;
+        font-family: 'AvenirHeavy';
+        font-size: 16px;
+        color: #222222;
+        padding: 16px 23px;
+        cursor: pointer; }
+        .post-nav-div .post-container .post-nav .filter-box img {
+          padding-right: 15px; }

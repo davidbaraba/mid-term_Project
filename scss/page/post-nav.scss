@@ -1,0 +1,50 @@
+.post-nav-div{
+    margin: 40px 0;
+    .post-container{
+        max-width: 1231px;
+        width: 100%;
+        margin: 0 auto;
+        .post-nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .post-nav-ul{
+                display: flex;
+                .post-nav-li{
+                    padding-right: 50px;
+                    .post-nav-a{
+                        font-size: 16px;
+                        color: $black_color;
+                        font-family: 'AvenirBook';
+                    }
+                    .post-nav-a.first{
+                        background-color: #F2F2F2;
+                        padding: 20px;
+                        border-radius: 12px;
+                        font-family: 'AvenirHeavy';
+                    }
+                }
+                // @media (max-width: 1300px){
+                //     display: none;
+                // }
+            }
+            .filter-box{
+                display: flex;
+                align-items: center;
+                border-radius: 12px;
+                border: 1px solid #D8D8D8;
+                font-family: 'AvenirHeavy';
+                font-size: 16px;
+                color: $black_color;
+                padding: 16px 23px;
+                cursor: pointer;
+                img{
+                    padding-right: 15px;
+                }
+            }
+            // @media (max-width: 1300px){
+            //     justify-content: center;
+            // }
+        }
+    }
+}

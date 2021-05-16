@@ -168,14 +168,8 @@ a {
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center; }
-      @media (max-width: 1120px) {
-        .main .header .container-flex {
-          justify-content: center; } }
       .main .header .container-flex .search-box {
         position: relative; }
-        @media (max-width: 960px) {
-          .main .header .container-flex .search-box {
-            display: none; } }
       .main .header .container-flex .search-box input {
         background-color: #E7E7E7;
         border: none;
@@ -183,23 +177,10 @@ a {
         padding: 18px 272px 18px 20px;
         font-family: 'AvenirHeavy';
         font-size: 14px; }
-        @media (max-width: 1460px) {
-          .main .header .container-flex .search-box input {
-            padding-right: 0px; } }
       .main .header .container-flex .search-box a {
         position: absolute;
         top: 18px;
         right: 15px; }
-      @media (max-width: 1120px) {
-        .main .header .container-flex .nav {
-          margin-top: 10px; } }
-      @media (max-width: 700px) {
-        .main .header .container-flex .nav {
-          flex-direction: row;
-          display: flex;
-          justify-content: space-between;
-          width: 100%;
-          align-items: center; } }
       .main .header .container-flex .nav .nav-ul {
         display: flex;
         align-items: center; }
@@ -222,15 +203,9 @@ a {
           background-color: #FF2288;
           border-radius: 12px;
           color: #FFFFFF; }
-          @media (max-width: 960px) {
-            .main .header .container-flex .nav .nav-ul .last .nav-a {
-              padding: 5px 10px; } }
         .main .header .container-flex .nav .nav-ul .nav-right {
           display: flex;
           align-items: center; }
-          @media (max-width: 700px) {
-            .main .header .container-flex .nav .nav-ul .nav-right {
-              display: none; } }
       .main .header .container-flex .nav .nav-burger {
         width: 26px;
         height: 11px;
@@ -238,9 +213,6 @@ a {
         cursor: pointer;
         margin-left: 10px;
         display: none; }
-        @media (max-width: 700px) {
-          .main .header .container-flex .nav .nav-burger {
-            display: flex; } }
         .main .header .container-flex .nav .nav-burger .nav-divider {
           width: 26px;
           height: 1px;
@@ -257,9 +229,6 @@ a {
 
 .post-nav-div {
   margin: 40px 0; }
-  @media (max-width: 1500px) {
-    .post-nav-div {
-      padding: 0 15px; } }
   .post-nav-div .post-container {
     max-width: 1231px;
     width: 100%;

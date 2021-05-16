@@ -257,6 +257,9 @@ a {
 
 .post-nav-div {
   margin: 40px 0; }
+  @media (max-width: 1500px) {
+    .post-nav-div {
+      padding: 0 15px; } }
   .post-nav-div .post-container {
     max-width: 1231px;
     width: 100%;

@@ -5,6 +5,8 @@
     padding: 42px 31px 105px 30px;
     color: $white_color;
     box-sizing: border-box;
+    max-height: 1135px;
+    height: 100%;
     .aside-title{
         @include horizontal (space-between);
         flex-wrap: wrap;

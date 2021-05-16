@@ -94,7 +94,9 @@ a {
   background-color: #222222;
   padding: 42px 31px 105px 30px;
   color: #FFFFFF;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  max-height: 1135px;
+  height: 100%; }
   .aside .aside-title {
     justify-content: space-between;
     flex-wrap: wrap; }
@@ -293,3 +295,55 @@ a {
     font-size: 16px;
     font-family: "AvenirHeavy";
     color: #222222; }
+
+.designers-box {
+  background-color: #FAFAFA; }
+  .designers-box .designers-container-div {
+    padding: 67px 0 60px 0; }
+  .designers-box .designers-box-title {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 54px; }
+    .designers-box .designers-box-title h4 {
+      font-size: 32px;
+      font-family: "AvenirHeavy";
+      color: #222222; }
+    .designers-box .designers-box-title h6 {
+      font-size: 14px;
+      font-family: "AvenirHeavy";
+      color: #222222; }
+  .designers-box .designers-div {
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .designers-box .designers-div .designers-article {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .designers-box .designers-div .designers-article img {
+        max-width: 132px; }
+      .designers-box .designers-div .designers-article h5 {
+        margin-top: 15px;
+        max-width: 70px;
+        text-align: center;
+        font-size: 16px;
+        font-family: "AvenirMedium";
+        color: #222222; }
+      .designers-box .designers-div .designers-article h6 {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 12px;
+        font-family: "AvenirBook";
+        color: #222222; }
+      .designers-box .designers-div .designers-article button {
+        margin-top: 17px;
+        padding: 12px 47px;
+        border: none;
+        border-radius: 12px;
+        border: 1px solid #D8D8D8;
+        font-size: 14px;
+        font-family: "AvenirHeavy";
+        color: #222222;
+        background-color: #FFFFFF; }
+      .designers-box .designers-div .designers-article .following {
+        background-color: #E7E7E7; }

@@ -1,0 +1,54 @@
+.designers-box{
+    .designers-container-div{
+        padding: 67px 0 60px 0;
+    }
+    background-color: #FAFAFA;
+    .designers-box-title{
+        justify-content: space-between;
+        align-items: center;
+        // margin-top: 67px;
+        margin-bottom: 54px;
+        h4{
+            @include text-styles (32px, 'AvenirHeavy', $black_color);
+        }
+        h6{
+            @include text-styles (14px, 'AvenirHeavy', $black_color);
+        }
+    }
+    .designers-div{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .designers-article{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                max-width: 132px;
+            }
+            h5{
+                margin-top: 15px;
+                max-width: 70px;
+                text-align: center;
+                @include text-styles (16px, 'AvenirMedium', $black_color);
+            }
+            h6{
+                margin-top: 10px;
+                text-align: center;
+                @include text-styles (12px, 'AvenirBook', $black_color);
+            }
+            button{
+                margin-top: 17px;
+                padding: 12px 47px;
+                border: none;
+                border-radius: 12px;
+                border: 1px solid #D8D8D8;
+                @include text-styles (14px, 'AvenirHeavy', $black_color);
+                background-color: $white_color;
+            }
+            .following{
+                background-color: #E7E7E7;
+            }
+        }
+    }
+}

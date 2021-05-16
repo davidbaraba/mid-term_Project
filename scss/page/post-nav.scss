@@ -1,6 +1,6 @@
 .post-nav-div{
     margin: 40px 0;
-    @media (max-width:1500px){
+    @media (max-width: 1500px){
         padding: 0 15px;
     }
     .post-container{
@@ -27,9 +27,6 @@
                         font-family: 'AvenirHeavy';
                     }
                 }
-                // @media (max-width: 1300px){
-                //     display: none;
-                // }
             }
             .filter-box{
                 display: flex;
@@ -45,9 +42,6 @@
                     padding-right: 15px;
                 }
             }
-            // @media (max-width: 1300px){
-            //     justify-content: center;
-            // }
         }
     }
 }

@@ -35,7 +35,7 @@
             }
             .nav{
                 @media (max-width: 1120px){
-                        margin-top: 10px;
+                    margin-top: 10px;
                 }
                 @media (max-width: 700px){
                     flex-direction: row;
@@ -71,7 +71,7 @@
                         border-radius:  12px;
                         color: $white_color;
                         @media (max-width: 960px){
-                            padding: 5px 10px!important;
+                            padding: 5px 10px;
                         }
                     }
                     .nav-right{

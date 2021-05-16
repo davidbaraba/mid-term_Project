@@ -224,7 +224,7 @@ a {
           color: #FFFFFF; }
           @media (max-width: 960px) {
             .main .header .container-flex .nav .nav-ul .last .nav-a {
-              padding: 5px 10px !important; } }
+              padding: 5px 10px; } }
         .main .header .container-flex .nav .nav-ul .nav-right {
           display: flex;
           align-items: center; }

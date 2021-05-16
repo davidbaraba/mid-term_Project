@@ -1,0 +1,24 @@
+.listBox-mainDiv{
+    justify-content: space-between;
+    padding: 70px 0;
+    border-bottom: 1px solid gray;
+    .list-box{
+        h6{
+            @include text-styles (16px, 'AvenirHeavy', $black_color);
+            margin-bottom: 40px
+        }
+        .list-box-a{
+            @include text-styles (16px, 'AvenirBook', $black_color);
+            line-height: 2.5;
+        }
+        .inside-box-ul{
+            .inside-box-a{
+                @include text-styles (16px, 'AvenirBook', $black_color);
+                line-height: 2.5;
+            }
+        }
+        .inside-margin{
+            margin: 40px 0;
+        }
+    }
+}

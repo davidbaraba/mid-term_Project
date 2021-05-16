@@ -69,8 +69,13 @@ a {
   margin: 0 auto;
   display: flex; }
 
-.container {
+.header-container {
   max-width: 1485px;
+  width: 100%;
+  margin: 0 auto; }
+
+.container {
+  max-width: 1231px;
   width: 100%;
   margin: 0 auto; }
 
@@ -164,9 +169,9 @@ a {
     border-bottom: 1px solid #AFAFAF;
     padding: 30px 90px 30px 25px; }
     .main .header .container-flex {
+      justify-content: space-between;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
       align-items: center; }
       .main .header .container-flex .search-box {
         position: relative; }
@@ -175,8 +180,9 @@ a {
         border: none;
         border-radius: 12px;
         padding: 18px 272px 18px 20px;
-        font-family: 'AvenirHeavy';
-        font-size: 14px; }
+        font-size: 14px;
+        font-family: "AvenirHeavy";
+        color: #222222; }
       .main .header .container-flex .search-box a {
         position: absolute;
         top: 18px;
@@ -195,8 +201,8 @@ a {
             top: -10px;
             right: 0; }
         .main .header .container-flex .nav .nav-ul .first .nav-a {
-          font-family: 'AvenirHeavy';
           font-size: 14px;
+          font-family: "AvenirHeavy";
           color: #FF2288; }
         .main .header .container-flex .nav .nav-ul .last .nav-a {
           padding: 20px 40px;
@@ -229,36 +235,61 @@ a {
 
 .post-nav-div {
   margin: 40px 0; }
-  .post-nav-div .post-container {
-    max-width: 1231px;
-    width: 100%;
-    margin: 0 auto; }
-    .post-nav-div .post-container .post-nav {
+  .post-nav-div .post-nav {
+    justify-content: space-between;
+    display: flex;
+    align-items: center; }
+    .post-nav-div .post-nav .post-nav-ul {
+      display: flex; }
+      .post-nav-div .post-nav .post-nav-ul .post-nav-li {
+        padding-right: 50px; }
+        .post-nav-div .post-nav .post-nav-ul .post-nav-li .post-nav-a {
+          font-size: 16px;
+          font-family: "AvenirBook";
+          color: #222222; }
+        .post-nav-div .post-nav .post-nav-ul .post-nav-li .post-nav-a.first {
+          background-color: #F2F2F2;
+          padding: 20px;
+          border-radius: 12px;
+          font-family: 'AvenirHeavy'; }
+    .post-nav-div .post-nav .filter-box {
       display: flex;
-      justify-content: space-between;
-      align-items: center; }
-      .post-nav-div .post-container .post-nav .post-nav-ul {
-        display: flex; }
-        .post-nav-div .post-container .post-nav .post-nav-ul .post-nav-li {
-          padding-right: 50px; }
-          .post-nav-div .post-container .post-nav .post-nav-ul .post-nav-li .post-nav-a {
-            font-size: 16px;
-            color: #222222;
-            font-family: 'AvenirBook'; }
-          .post-nav-div .post-container .post-nav .post-nav-ul .post-nav-li .post-nav-a.first {
-            background-color: #F2F2F2;
-            padding: 20px;
-            border-radius: 12px;
-            font-family: 'AvenirHeavy'; }
-      .post-nav-div .post-container .post-nav .filter-box {
-        display: flex;
-        align-items: center;
-        border-radius: 12px;
-        border: 1px solid #D8D8D8;
-        font-family: 'AvenirHeavy';
-        font-size: 16px;
-        color: #222222;
-        padding: 16px 23px;
-        cursor: pointer; }
-        .post-nav-div .post-container .post-nav .filter-box img {
-          padding-right: 15px; }
+      align-items: center;
+      border-radius: 12px;
+      border: 1px solid #D8D8D8;
+      font-size: 16px;
+      font-family: "AvenirHeavy";
+      color: #222222;
+      padding: 16px 23px;
+      cursor: pointer; }
+      .post-nav-div .post-nav .filter-box img {
+        padding-right: 15px; }
+
+.article-div {
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .article-div .post-article {
+    margin-bottom: 40px; }
+    .article-div .post-article img {
+      max-width: 289px;
+      width: 100%; }
+    .article-div .post-article h5 {
+      max-width: 289px;
+      width: 100%;
+      margin-bottom: 30px;
+      font-size: 18px;
+      font-family: "AvenirMedium";
+      color: #222222; }
+
+.btn-box {
+  display: flex;
+  justify-content: center; }
+  .btn-box .article-btn {
+    margin: 70px 0;
+    border: none;
+    cursor: pointer;
+    padding: 20px 100px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: "AvenirHeavy";
+    color: #222222; }

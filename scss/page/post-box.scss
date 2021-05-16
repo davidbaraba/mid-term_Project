@@ -1,0 +1,29 @@
+.article-div{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .post-article{
+        margin-bottom: 40px;
+        img{
+            max-width: 289px;
+            width: 100%;
+        }
+        h5{
+            max-width: 289px;
+            width: 100%;
+            margin-bottom: 30px;
+            @include text-styles (18px, 'AvenirMedium', $black_color);
+        }
+    }
+}
+.btn-box{
+    display: flex;
+    justify-content: center;
+    .article-btn{
+        margin: 70px 0;
+        border: none;
+        cursor: pointer;
+        padding: 20px 100px;
+        border-radius: 12px;
+        @include text-styles (16px, 'AvenirHeavy', $black_color);
+    }
+}

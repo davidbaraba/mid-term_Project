@@ -4,9 +4,9 @@
         border-bottom: 1px solid $gray_color;
         padding: 30px 90px 30px 25px;
         .container-flex{
+            @include horizontal (space-between);
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
             align-items: center;
             .search-box{
                 position: relative;
@@ -16,8 +16,7 @@
                 border: none;
                 border-radius: 12px;
                 padding: 18px 272px 18px 20px;
-                font-family: 'AvenirHeavy';
-                font-size: 14px;
+                @include text-styles(14px, 'AvenirHeavy', $black_color);
             }
             .search-box a{
                 position: absolute;
@@ -42,9 +41,7 @@
                         }
                     }
                     .first .nav-a{
-                        font-family: 'AvenirHeavy';
-                        font-size: 14px;
-                        color: $red_color;
+                        @include text-styles(14px, 'AvenirHeavy', $red_color);
                     }
                     .last .nav-a{
                         padding: 20px 40px;

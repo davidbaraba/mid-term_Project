@@ -6,7 +6,7 @@
     color: $white_color;
     box-sizing: border-box;
     .aside-title{
-        justify-content: space-between;
+        @include horizontal (space-between);
         flex-wrap: wrap;
         h3{
             font-family: 'AvenirBlack';

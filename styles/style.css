@@ -369,3 +369,21 @@ a {
     line-height: 2.5; }
   .listBox-mainDiv .list-box .inside-margin {
     margin: 40px 0; }
+
+.footer-div {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  .footer-div .social-ul {
+    align-items: center; }
+    .footer-div .social-ul .social-li:not(.last) {
+      margin-right: 20px; }
+  .footer-div .footer-logo h4 {
+    font-size: 16px;
+    font-family: "AvenirBook";
+    color: #222222; }
+  .footer-div .footer-logo span {
+    font-size: 16px;
+    font-family: "AvenirBlack";
+    color: #222222; }

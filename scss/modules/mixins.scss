@@ -14,4 +14,8 @@
     color: $color;
 }
 
+@mixin  hover-transition($seccond) {
+    transition: $seccond;
+}
+
 // @include horizontal (space-between);

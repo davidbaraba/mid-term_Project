@@ -45,6 +45,12 @@
         margin-top: 107px;
         .aside-nav-li{
             margin-bottom: 50px;
+            @include hover-transition ( .3s);
+            &:hover:not(.active){
+                background-color: #FF2288;
+                padding: 15px 0 15px 0;
+                border-radius: 12px;
+            }
             .aside-nav-a{
                 @include align-flex-with-wrap(flex, center, wrap);
                 img{

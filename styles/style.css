@@ -1,8 +1,32 @@
+@font-face {
+  font-family: 'AvenirMedium';
+  src: url("../../fonts/AvenirMedium.eot");
+  src: url("../../fonts/AvenirMedium.eot") format("embedded-opentype"), url("../../fonts/AvenirMedium.woff2") format("woff2"), url("../../fonts/AvenirMedium.woff") format("woff"), url("../../fonts/AvenirMedium.ttf") format("truetype"), url("../../fonts/AvenirMedium.svg#AvenirMedium") format("svg"); }
+
+@font-face {
+  font-family: 'AvenirHeavy';
+  src: url("../../fonts/AvenirHeavy.eot");
+  src: url("../../fonts/AvenirHeavy.eot") format("embedded-opentype"), url("../../fonts/AvenirHeavy.woff2") format("woff2"), url("../../fonts/AvenirHeavy.woff") format("woff"), url("../../fonts/AvenirHeavy.ttf") format("truetype"), url("../../fonts/AvenirHeavy.svg#AvenirHeavy") format("svg"); }
+
+@font-face {
+  font-family: 'AvenirBook';
+  src: url("../../fonts/AvenirBook.eot");
+  src: url("../../fonts/AvenirBook.eot") format("embedded-opentype"), url("../../fonts/AvenirBook.woff2") format("woff2"), url("../../fonts/AvenirBook.woff") format("woff"), url("../../fonts/AvenirBook.ttf") format("truetype"), url("../../fonts/AvenirBook.svg#AvenirBook") format("svg"); }
+
+@font-face {
+  font-family: 'AvenirBlack';
+  src: url("../../fonts/AvenirBlack.eot");
+  src: url("../../fonts/AvenirBlack.eot") format("embedded-opentype"), url("../../fonts/AvenirBlack.woff2") format("woff2"), url("../../fonts/AvenirBlack.woff") format("woff"), url("../../fonts/AvenirBlack.ttf") format("truetype"), url("../../fonts/AvenirBlack.svg#AvenirBlack") format("svg"); }
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../../fonts/AvenirRegular.eot");
+  src: url("../../fonts/AvenirRegular.eot") format("embedded-opentype"), url("../../fonts/AvenirRegular.woff2") format("woff2"), url("../../fonts/AvenirRegular.woff") format("woff"), url("../../fonts/AvenirRegular.ttf") format("truetype"), url("../../fonts/AvenirRegular.svg#AvenirRegular") format("svg"); }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url(../../css/fonts.css);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -102,7 +126,12 @@ a {
   .aside .aside-nav-div {
     margin-top: 107px; }
     .aside .aside-nav-div .aside-nav-li {
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      transition: 0.3s; }
+      .aside .aside-nav-div .aside-nav-li:hover:not(.active) {
+        background-color: #FF2288;
+        padding: 15px 0 15px 0;
+        border-radius: 12px; }
       .aside .aside-nav-div .aside-nav-li .aside-nav-a {
         display: flex;
         align-items: center;
@@ -165,7 +194,10 @@ a {
       .main .header .container-flex .search-box a {
         position: absolute;
         top: 18px;
-        right: 15px; }
+        right: 15px;
+        transition: 0.3s; }
+        .main .header .container-flex .search-box a:hover {
+          transform: scale(1.5); }
       .main .header .container-flex .nav .nav-ul {
         display: flex;
         align-items: center; }
@@ -179,6 +211,8 @@ a {
             position: absolute;
             top: -10px;
             right: 0; }
+          .main .header .container-flex .nav .nav-ul .nav-li:not(.first):hover {
+            transform: scale(1.2); }
         .main .header .container-flex .nav .nav-ul .first .nav-a {
           font-size: 14px;
           font-family: "AvenirHeavy";
@@ -225,7 +259,13 @@ a {
         .post-nav-div .post-nav .post-nav-ul .post-nav-li .post-nav-a {
           font-size: 16px;
           font-family: "AvenirBook";
-          color: #222222; }
+          color: #222222;
+          transition: 0.3s; }
+          .post-nav-div .post-nav .post-nav-ul .post-nav-li .post-nav-a:hover {
+            background-color: #F2F2F2;
+            padding: 20px;
+            border-radius: 12px;
+            font-family: 'AvenirHeavy'; }
         .post-nav-div .post-nav .post-nav-ul .post-nav-li .post-nav-a.first {
           background-color: #F2F2F2;
           padding: 20px;
@@ -249,9 +289,25 @@ a {
   justify-content: space-between; }
   .article-div .post-article {
     margin-bottom: 40px; }
-    .article-div .post-article img {
+    .article-div .post-article .post-article-image {
       max-width: 289px;
       width: 100%; }
+    .article-div .post-article .plus-icon {
+      top: 30px;
+      left: 30px;
+      border-radius: 12px;
+      padding: 7px;
+      background-color: #FFFFFF; }
+      .article-div .post-article .plus-icon:hover {
+        transform: scale(1.2); }
+    .article-div .post-article .heart-icon {
+      top: 70px;
+      left: 30px;
+      border-radius: 12px;
+      padding: 7px;
+      background-color: #FFFFFF; }
+      .article-div .post-article .heart-icon:hover {
+        transform: scale(1.2); }
     .article-div .post-article h5 {
       max-width: 289px;
       width: 100%;
@@ -271,7 +327,12 @@ a {
     border-radius: 12px;
     font-size: 16px;
     font-family: "AvenirHeavy";
-    color: #222222; }
+    color: #222222;
+    transition: 0.3s; }
+    .btn-box .article-btn:hover {
+      font-size: 26px;
+      font-family: "AvenirHeavy";
+      color: #222222; }
 
 .designers-box {
   background-color: #FAFAFA; }
@@ -298,14 +359,16 @@ a {
       justify-content: center;
       align-items: center; }
       .designers-box .designers-div .designers-article img {
-        max-width: 132px; }
+        max-width: 132px;
+        cursor: pointer; }
       .designers-box .designers-div .designers-article h5 {
         margin-top: 15px;
         max-width: 70px;
         text-align: center;
         font-size: 16px;
         font-family: "AvenirMedium";
-        color: #222222; }
+        color: #222222;
+        cursor: pointer; }
       .designers-box .designers-div .designers-article h6 {
         margin-top: 10px;
         text-align: center;
@@ -321,7 +384,8 @@ a {
         font-size: 14px;
         font-family: "AvenirHeavy";
         color: #222222;
-        background-color: #FFFFFF; }
+        background-color: #FFFFFF;
+        cursor: pointer; }
       .designers-box .designers-div .designers-article .following {
         background-color: #E7E7E7; }
 
@@ -356,6 +420,8 @@ a {
     align-items: center; }
     .footer-div .social-ul .social-li:not(.last) {
       margin-right: 20px; }
+    .footer-div .social-ul .social-img:hover {
+      transform: scale(1.5); }
   .footer-div .footer-logo h4 {
     font-size: 16px;
     font-family: "AvenirBook";
@@ -379,7 +445,8 @@ a {
     .product-div .table .table-tbody {
       width: 100%; }
       .product-div .table .table-tbody .table-th {
-        padding-top: 0 !important; }
+        padding-top: 0 !important;
+        padding-left: 65px; }
       .product-div .table .table-tbody .table-tr {
         display: flex;
         justify-content: space-between;
@@ -391,3 +458,9 @@ a {
         font-size: 16px;
         font-family: "AvenirHeavy";
         color: #AFAFAF; }
+        .product-div .table .table-tbody .product-tr:hover {
+          background-color: #E7E7E7;
+          color: #222222;
+          border-radius: 10px;
+          padding: 29px 30px 32px 30px;
+          cursor: pointer; }

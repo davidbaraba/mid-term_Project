@@ -3,9 +3,29 @@
     justify-content: space-between;
     .post-article{
         margin-bottom: 40px;
-        img{
+        .post-article-image{
             max-width: 289px;
             width: 100%;
+        }
+        .plus-icon{
+            top: 30px;
+            left: 30px;
+            border-radius: 12px;
+            padding: 7px;
+            background-color: $white_color;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+        .heart-icon{
+            top: 70px;
+            left: 30px;
+            border-radius: 12px;
+            padding: 7px;
+            background-color: $white_color;
+            &:hover{
+                transform: scale(1.2);
+            }
         }
         h5{
             max-width: 289px;
@@ -25,5 +45,10 @@
         padding: 20px 100px;
         border-radius: 12px;
         @include text-styles (16px, 'AvenirHeavy', $black_color);
+        @include hover-transition ( .3s);
+        &:hover{
+            @include text-styles (26px, 'AvenirHeavy', $black_color);
+        }
     }
+   
 }

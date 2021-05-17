@@ -25,12 +25,14 @@
             align-items: center;
             img{
                 max-width: 132px;
+                cursor: pointer;
             }
             h5{
                 margin-top: 15px;
                 max-width: 70px;
                 text-align: center;
                 @include text-styles (16px, 'AvenirMedium', $black_color);
+                cursor: pointer;
             }
             h6{
                 margin-top: 10px;
@@ -45,6 +47,7 @@
                 border: 1px solid #D8D8D8;
                 @include text-styles (14px, 'AvenirHeavy', $black_color);
                 background-color: $white_color;
+                cursor: pointer;
             }
             .following{
                 background-color: #E7E7E7;

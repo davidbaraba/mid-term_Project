@@ -10,6 +10,13 @@
                 padding-right: 50px;
                 .post-nav-a{
                     @include text-styles(16px, 'AvenirBook', $black_color);
+                    @include hover-transition ( .3s);
+                    &:hover{
+                        background-color: #F2F2F2;
+                            padding: 20px;
+                            border-radius: 12px;
+                            font-family: 'AvenirHeavy';
+                    }
                 }
                 .post-nav-a.first{
                     background-color: #F2F2F2;

@@ -23,7 +23,12 @@
                 position: absolute;
                 top: 18px;
                 right: 15px;
+                @include hover-transition( .3s);
+                &:hover{
+                    transform: scale(1.5);
+                }
             }
+            
             .nav{
                 .nav-ul{
                     display: flex;
@@ -39,6 +44,9 @@
                             position: absolute;
                             top: -10px;
                             right: 0;
+                        }
+                        &:hover{
+                            transform: scale(1.2);
                         }
                     }
                     .first .nav-a{

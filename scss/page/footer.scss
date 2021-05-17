@@ -8,6 +8,9 @@
         .social-li:not(.last){
             margin-right: 20px;
         }
+        .social-img:hover{
+            transform: scale(1.5);
+        }
     }
     .footer-logo{
         h4{

@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url(/scss/partials/fonts.css);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -37,31 +38,6 @@ table {
 
 a {
   text-decoration: none; }
-
-@font-face {
-  font-family: 'AvenirMedium';
-  src: url("../../fonts/AvenirMedium.eot");
-  src: url("../../fonts/AvenirMedium.eot") format("embedded-opentype"), url("../../fonts/AvenirMedium.woff2") format("woff2"), url("../../fonts/AvenirMedium.woff") format("woff"), url("../../fonts/AvenirMedium.ttf") format("truetype"), url("../../fonts/AvenirMedium.svg#AvenirMedium") format("svg"); }
-
-@font-face {
-  font-family: 'AvenirHeavy';
-  src: url("../../fonts/AvenirHeavy.eot");
-  src: url("../../fonts/AvenirHeavy.eot") format("embedded-opentype"), url("../../fonts/AvenirHeavy.woff2") format("woff2"), url("../../fonts/AvenirHeavy.woff") format("woff"), url("../../fonts/AvenirHeavy.ttf") format("truetype"), url("../../fonts/AvenirHeavy.svg#AvenirHeavy") format("svg"); }
-
-@font-face {
-  font-family: 'AvenirBook';
-  src: url("../../fonts/AvenirBook.eot");
-  src: url("../../fonts/AvenirBook.eot") format("embedded-opentype"), url("../../fonts/AvenirBook.woff2") format("woff2"), url("../../fonts/AvenirBook.woff") format("woff"), url("../../fonts/AvenirBook.ttf") format("truetype"), url("../../fonts/AvenirBook.svg#AvenirBook") format("svg"); }
-
-@font-face {
-  font-family: 'AvenirBlack';
-  src: url("../../fonts/AvenirBlack.eot");
-  src: url("../../fonts/AvenirBlack.eot") format("embedded-opentype"), url("../../fonts/AvenirBlack.woff2") format("woff2"), url("../../fonts/AvenirBlack.woff") format("woff"), url("../../fonts/AvenirBlack.ttf") format("truetype"), url("../../fonts/AvenirBlack.svg#AvenirBlack") format("svg"); }
-
-@font-face {
-  font-family: 'Avenir';
-  src: url("../../fonts/AvenirRegular.eot");
-  src: url("../../fonts/AvenirRegular.eot") format("embedded-opentype"), url("../../fonts/AvenirRegular.woff2") format("woff2"), url("../../fonts/AvenirRegular.woff") format("woff"), url("../../fonts/AvenirRegular.ttf") format("truetype"), url("../../fonts/AvenirRegular.svg#AvenirRegular") format("svg"); }
 
 .main-container {
   max-width: 1920px;
@@ -168,13 +144,14 @@ a {
 .main {
   width: 100%; }
   .main .header {
-    border-bottom: 1px solid #AFAFAF;
-    padding: 30px 90px 30px 25px; }
+    padding: 30px 90px 0 25px; }
     .main .header .container-flex {
       justify-content: space-between;
       display: flex;
       flex-wrap: wrap;
-      align-items: center; }
+      align-items: center;
+      border-bottom: 1px solid #AFAFAF;
+      padding-bottom: 30px; }
       .main .header .container-flex .search-box {
         position: relative; }
       .main .header .container-flex .search-box input {
@@ -387,3 +364,30 @@ a {
     font-size: 16px;
     font-family: "AvenirBlack";
     color: #222222; }
+
+.profile-img {
+  border: 1px solid #AFAFAF;
+  border-radius: 50px;
+  padding: 16px; }
+
+.product-div {
+  padding-top: 69px;
+  padding-bottom: 61px; }
+  .product-div .table {
+    display: flex;
+    margin-bottom: 123px; }
+    .product-div .table .table-tbody {
+      width: 100%; }
+      .product-div .table .table-tbody .table-th {
+        padding-top: 0 !important; }
+      .product-div .table .table-tbody .table-tr {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #AFAFAF;
+        padding-bottom: 32px;
+        padding-top: 29px; }
+      .product-div .table .table-tbody .product-tr {
+        font-size: 16px;
+        font-family: "AvenirHeavy";
+        color: #AFAFAF; }

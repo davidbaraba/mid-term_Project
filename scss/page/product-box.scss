@@ -1,0 +1,26 @@
+.product-div{
+    padding-top: 69px;
+    padding-bottom: 61px;
+    .table{
+        display: flex;
+        margin-bottom: 123px;
+        .table-tbody{
+            width: 100%;
+            .table-th{
+                padding-top: 0!important;
+            }
+            .table-tr{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                border-bottom: 1px solid $gray_color;
+                padding-bottom: 32px;
+                padding-top: 29px;
+            }
+            .product-tr{
+                @include text-styles(16px, 'AvenirHeavy', $gray_color);
+            }
+        }
+        
+    }
+}

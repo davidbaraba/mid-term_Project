@@ -1,13 +1,14 @@
 .main{
     width: 100%;
     .header{
-        border-bottom: 1px solid $gray_color;
-        padding: 30px 90px 30px 25px;
+        padding: 30px 90px 0 25px;
         .container-flex{
             @include horizontal (space-between);
             display: flex;
             flex-wrap: wrap;
             align-items: center;
+            border-bottom: 1px solid $gray_color;
+            padding-bottom: 30px;
             .search-box{
                 position: relative;
             }

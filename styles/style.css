@@ -97,19 +97,36 @@ a {
   box-sizing: border-box;
   max-height: 1135px;
   height: 100%; }
+  @media screen and (max-width: 1080px) {
+    .aside {
+      padding-right: 5px;
+      padding-left: 5px;
+      width: min-content; } }
   .aside .aside-title {
     justify-content: space-between;
     flex-wrap: wrap; }
+    @media screen and (max-width: 1080px) {
+      .aside .aside-title {
+        justify-content: center; } }
     .aside .aside-title h3 {
       font-family: 'AvenirBlack';
       font-size: 24px; }
+      @media screen and (max-width: 1080px) {
+        .aside .aside-title h3 {
+          font-size: 14px; } }
       .aside .aside-title h3 span {
         font-family: 'AvenirBook'; }
+        @media screen and (max-width: 1080px) {
+          .aside .aside-title h3 span {
+            font-size: 12px; } }
     .aside .aside-title .burger {
       width: 26px;
       height: 11px;
       position: relative;
       cursor: pointer; }
+      @media screen and (max-width: 1080px) {
+        .aside .aside-title .burger {
+          margin-top: 10px; } }
       .aside .aside-title .burger .divider {
         width: 26px;
         height: 1px;
@@ -125,9 +142,16 @@ a {
         top: 100%; }
   .aside .aside-nav-div {
     margin-top: 107px; }
+    @media screen and (max-width: 1080px) {
+      .aside .aside-nav-div {
+        margin-top: 50px; } }
     .aside .aside-nav-div .aside-nav-li {
       margin-bottom: 50px;
       transition: 0.3s; }
+      @media screen and (max-width: 1080px) {
+        .aside .aside-nav-div .aside-nav-li {
+          padding: 5px 0 5px 0;
+          margin-bottom: 10px; } }
       .aside .aside-nav-div .aside-nav-li:hover:not(.active) {
         background-color: #FF2288;
         padding: 15px 0 15px 0;
@@ -136,44 +160,82 @@ a {
         display: flex;
         align-items: center;
         flex-wrap: wrap; }
+        @media screen and (max-width: 1080px) {
+          .aside .aside-nav-div .aside-nav-li .aside-nav-a {
+            justify-content: center;
+            flex-direction: column; } }
         .aside .aside-nav-div .aside-nav-li .aside-nav-a img {
           margin-left: 30px; }
+          @media screen and (max-width: 1080px) {
+            .aside .aside-nav-div .aside-nav-li .aside-nav-a img {
+              margin-left: 0; } }
         .aside .aside-nav-div .aside-nav-li .aside-nav-a h6 {
           margin-left: 15px;
           font-size: 16px;
           font-family: 'AvenirMedium';
           color: #FFFFFF; }
+          @media screen and (max-width: 1080px) {
+            .aside .aside-nav-div .aside-nav-li .aside-nav-a h6 {
+              margin-left: 0; } }
     .aside .aside-nav-div .active {
       background-color: #FF2288;
       padding: 15px 0 15px 30px;
       border-radius: 12px;
       margin-bottom: 35px; }
+      @media screen and (max-width: 1080px) {
+        .aside .aside-nav-div .active {
+          padding: 5px 0 5px 0;
+          margin-bottom: 10px; } }
       .aside .aside-nav-div .active .aside-nav-a img {
         margin-left: 0; }
   .aside .aside-following-box h6 {
     margin: 40px 0 30px 30px;
     font-family: 'AvenirHeavy';
     font-size: 12px; }
+    @media screen and (max-width: 1080px) {
+      .aside .aside-following-box h6 {
+        margin: 30px 10px 30px 0; } }
   .aside .aside-following-a {
     display: flex;
     align-items: center;
     flex-wrap: wrap; }
+    @media screen and (max-width: 1080px) {
+      .aside .aside-following-a {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center; } }
     .aside .aside-following-a img {
       margin-left: 30px; }
+      @media screen and (max-width: 1080px) {
+        .aside .aside-following-a img {
+          margin-left: 0;
+          margin-bottom: 10px; } }
     .aside .aside-following-a h6 {
       color: #FFFFFF;
       font-size: 16px;
       font-family: 'AvenirMedium'; }
+      @media screen and (max-width: 1080px) {
+        .aside .aside-following-a h6 {
+          margin: 0 0 10px 0; } }
   .aside .loadMore {
     font-family: 'AvenirHeavy';
     font-size: 14px;
     color: #FFFFFF;
     margin-left: 30px; }
+    @media screen and (max-width: 1080px) {
+      .aside .loadMore {
+        margin-left: 6px;
+        margin-top: 10px;
+        font-size: 10px; } }
 
 .main {
   width: 100%; }
   .main .header {
     padding: 30px 90px 0 25px; }
+    @media screen and (max-width: 1080px) {
+      .main .header {
+        padding: 30px 10px 0 10px; } }
     .main .header .container-flex {
       justify-content: space-between;
       display: flex;
@@ -181,8 +243,14 @@ a {
       align-items: center;
       border-bottom: 1px solid #AFAFAF;
       padding-bottom: 30px; }
+      @media screen and (max-width: 1360px) {
+        .main .header .container-flex {
+          justify-content: center; } }
       .main .header .container-flex .search-box {
         position: relative; }
+        @media screen and (max-width: 1080px) {
+          .main .header .container-flex .search-box {
+            display: none; } }
       .main .header .container-flex .search-box input {
         background-color: #E7E7E7;
         border: none;
@@ -191,6 +259,10 @@ a {
         font-size: 14px;
         font-family: "AvenirHeavy";
         color: #222222; }
+        @media screen and (max-width: 1360px) {
+          .main .header .container-flex .search-box input {
+            padding-right: 0;
+            margin-right: 10px; } }
       .main .header .container-flex .search-box a {
         position: absolute;
         top: 18px;
@@ -198,6 +270,13 @@ a {
         transition: 0.3s; }
         .main .header .container-flex .search-box a:hover {
           transform: scale(1.5); }
+      @media (max-width: 1080px) {
+        .main .header .container-flex .nav {
+          flex-direction: row;
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          align-items: center; } }
       .main .header .container-flex .nav .nav-ul {
         display: flex;
         align-items: center; }
@@ -225,6 +304,14 @@ a {
         .main .header .container-flex .nav .nav-ul .nav-right {
           display: flex;
           align-items: center; }
+          @media screen and (max-width: 1080px) {
+            .main .header .container-flex .nav .nav-ul .nav-right {
+              display: none; } }
+      .main .header .container-flex .nav .profile-box {
+        display: none; }
+        @media screen and (max-width: 1080px) {
+          .main .header .container-flex .nav .profile-box {
+            display: flex; } }
       .main .header .container-flex .nav .nav-burger {
         width: 26px;
         height: 11px;
@@ -232,6 +319,9 @@ a {
         cursor: pointer;
         margin-left: 10px;
         display: none; }
+        @media screen and (max-width: 1080px) {
+          .main .header .container-flex .nav .nav-burger {
+            display: flex; } }
         .main .header .container-flex .nav .nav-burger .nav-divider {
           width: 26px;
           height: 1px;

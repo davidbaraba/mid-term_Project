@@ -1,27 +1,27 @@
 @font-face {
   font-family: 'AvenirMedium';
-  src: url("../../fonts/AvenirLTPro-Medium.eot");
-  src: url("../../fonts/AvenirLTPro-Medium.eot") format("embedded-opentype"), url("../../fonts/AvenirLTPro-Medium.woff2") format("woff2"), url("../../fonts/AvenirLTPro-Medium.woff") format("woff"), url("../../fonts/AvenirLTPro-Medium.ttf") format("truetype"), url("../../fonts/AvenirLTPro-Medium.svg") format("svg"); }
+  src: url("../../fonts/AvenirMedium.eot");
+  src: url("../../fonts/AvenirMedium.eot") format("embedded-opentype"), url("../../fonts/AvenirMedium.woff2") format("woff2"), url("../../fonts/AvenirMedium.woff") format("woff"), url("../../fonts/AvenirMedium.ttf") format("truetype"), url("../../fonts/AvenirMedium.svg#AvenirMedium") format("svg"); }
 
 @font-face {
   font-family: 'AvenirHeavy';
-  src: url("../../fonts/AvenirLTPro-Heavy.eot");
-  src: url("../../fonts/AvenirLTPro-Heavy.eot") format("embedded-opentype"), url("../../fonts/AvenirLTPro-Heavy.woff2") format("woff2"), url("../../fonts/AvenirLTPro-Heavy.woff") format("woff"), url("../../fonts/AvenirLTPro-Heavy.ttf") format("truetype"), url("../../fonts/AvenirLTPro-Heavy.svg") format("svg"); }
+  src: url("../../fonts/AvenirHeavy.eot");
+  src: url("../../fonts/AvenirHeavy.eot") format("embedded-opentype"), url("../../fonts/AvenirHeavy.woff2") format("woff2"), url("../../fonts/AvenirHeavy.woff") format("woff"), url("../../fonts/AvenirHeavy.ttf") format("truetype"), url("../../fonts/AvenirHeavy.svg#AvenirHeavy") format("svg"); }
 
 @font-face {
   font-family: 'AvenirBook';
-  src: url("../../fonts/AvenirLTPro-Book.eot");
-  src: url("../../fonts/AvenirLTPro-Book.eot") format("embedded-opentype"), url("../../fonts/AvenirLTPro-Book.woff2") format("woff2"), url("../../fonts/AvenirLTPro-Book.woff") format("woff"), url("../../fonts/AvenirLTPro-Book.ttf") format("truetype"), url("../../fonts/AvenirLTPro-Book.svg") format("svg"); }
+  src: url("../../fonts/AvenirBook.eot");
+  src: url("../../fonts/AvenirBook.eot") format("embedded-opentype"), url("../../fonts/AvenirBook.woff2") format("woff2"), url("../../fonts/AvenirBook.woff") format("woff"), url("../../fonts/AvenirBook.ttf") format("truetype"), url("../../fonts/AvenirBook.svg#AvenirBook") format("svg"); }
 
 @font-face {
   font-family: 'AvenirBlack';
-  src: url("../../fonts/AvenirLTPro-Black.eot");
-  src: url("../../fonts/AvenirLTPro-Black.eot") format("embedded-opentype"), url("../../fonts/AvenirLTPro-Black.woff2") format("woff2"), url("../../fonts/AvenirLTPro-Black.woff") format("woff"), url("../../fonts/AvenirLTPro-Black.ttf") format("truetype"), url("../../fonts/AvenirLTPro-Black.svg") format("svg"); }
+  src: url("../../fonts/AvenirBlack.eot");
+  src: url("../../fonts/AvenirBlack.eot") format("embedded-opentype"), url("../../fonts/AvenirBlack.woff2") format("woff2"), url("../../fonts/AvenirBlack.woff") format("woff"), url("../../fonts/AvenirBlack.ttf") format("truetype"), url("../../fonts/AvenirBlack.svg#AvenirBlack") format("svg"); }
 
 @font-face {
   font-family: 'Avenir';
-  src: url("../../fonts/AvenirLTPro-Light.eot");
-  src: url("../../fonts/AvenirLTPro-Light.eot") format("embedded-opentype"), url("../../fonts/AvenirLTPro-Heavy.woff2") format("woff2"), url("../../fonts/AvenirLTPro-Heavy.woff") format("woff"), url("../../fonts/AvenirLTPro-Heavy.ttf") format("truetype"), url("../../fonts/AvenirLTPro-Heavy.svg") format("svg"); }
+  src: url("../../fonts/AvenirRegular.eot");
+  src: url("../../fonts/AvenirRegular.eot") format("embedded-opentype"), url("../../fonts/AvenirRegular.woff2") format("woff2"), url("../../fonts/AvenirRegular.woff") format("woff"), url("../../fonts/AvenirRegular.ttf") format("truetype"), url("../../fonts/AvenirRegular.svg#AvenirRegular") format("svg"); }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -80,7 +80,7 @@ a {
   margin: 0 auto; }
   @media screen and (max-width: 1370px) {
     .container {
-      padding: 0 10px;
+      padding: 0 10px !important;
       box-sizing: border-box; } }
 
 .flex {
@@ -350,12 +350,21 @@ a {
       .post-nav-div .post-nav {
         flex-wrap: wrap;
         justify-content: center; } }
+    @media screen and (max-width: 900px) {
+      .post-nav-div .post-nav {
+        justify-content: space-between; } }
+    @media screen and (max-width: 360px) {
+      .post-nav-div .post-nav {
+        justify-content: center; } }
     .post-nav-div .post-nav .post-nav-ul {
       display: flex; }
       @media screen and (max-width: 1360px) {
         .post-nav-div .post-nav .post-nav-ul {
           flex-wrap: wrap;
           margin-bottom: 10px; } }
+      @media screen and (max-width: 900px) {
+        .post-nav-div .post-nav .post-nav-ul {
+          display: none; } }
       .post-nav-div .post-nav .post-nav-ul .post-nav-li {
         padding-right: 50px; }
         @media screen and (max-width: 1360px) {
@@ -376,6 +385,25 @@ a {
           padding: 20px;
           border-radius: 12px;
           font-family: 'AvenirHeavy'; }
+    .post-nav-div .post-nav .responsive-nav-burger {
+      display: none; }
+      @media screen and (max-width: 900px) {
+        .post-nav-div .post-nav .responsive-nav-burger {
+          display: flex;
+          align-items: center;
+          border-radius: 12px;
+          padding: 8px;
+          border: 1px solid #D8D8D8;
+          font-size: 16px;
+          font-family: "AvenirHeavy";
+          color: #222222;
+          cursor: pointer; } }
+      @media screen and (max-width: 360px) {
+        .post-nav-div .post-nav .responsive-nav-burger {
+          margin-bottom: 10px; } }
+      .post-nav-div .post-nav .responsive-nav-burger img {
+        max-width: 40px;
+        max-height: 24px; }
     .post-nav-div .post-nav .filter-box {
       display: flex;
       align-items: center;
@@ -395,8 +423,26 @@ a {
 .article-div {
   flex-wrap: wrap;
   justify-content: space-between; }
+  @media screen and (max-width: 1080px) {
+    .article-div {
+      justify-content: center; } }
   .article-div .post-article {
     margin-bottom: 40px; }
+    @media screen and (max-width: 1570px) {
+      .article-div .post-article:nth-child(7) {
+        display: none; }
+      .article-div .post-article:nth-child(8) {
+        display: none; } }
+    @media screen and (max-width: 1225px) {
+      .article-div .post-article:nth-child(5) {
+        display: none; }
+      .article-div .post-article:nth-child(6) {
+        display: none; } }
+    @media screen and (max-width: 960px) {
+      .article-div .post-article:nth-child(3) {
+        display: none; }
+      .article-div .post-article:nth-child(4) {
+        display: none; } }
     .article-div .post-article .post-article-image {
       max-width: 289px;
       width: 100%; }
@@ -461,11 +507,17 @@ a {
   .designers-box .designers-div {
     flex-wrap: wrap;
     justify-content: space-between; }
+    @media screen and (max-width: 1370px) {
+      .designers-box .designers-div {
+        justify-content: center; } }
     .designers-box .designers-div .designers-article {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center; }
+      @media screen and (max-width: 1370px) {
+        .designers-box .designers-div .designers-article {
+          margin-bottom: 10px; } }
       .designers-box .designers-div .designers-article img {
         max-width: 132px;
         cursor: pointer; }
@@ -501,22 +553,43 @@ a {
   justify-content: space-between;
   padding: 70px 0;
   border-bottom: 1px solid gray; }
-  .listBox-mainDiv .list-box h6 {
+  @media screen and (max-width: 1080px) {
+    .listBox-mainDiv {
+      flex-wrap: wrap; } }
+  .listBox-mainDiv .list-box img {
+    display: none; }
+    @media screen and (max-width: 1080px) {
+      .listBox-mainDiv .list-box img {
+        display: flex;
+        cursor: pointer; } }
+  @media screen and (max-width: 1080px) {
+    .listBox-mainDiv .list-box {
+      display: flex; } }
+  @media screen and (max-width: 1080px) {
+    .listBox-mainDiv .list-box h6 {
+      margin-bottom: 10px; } }
+  @media screen and (max-width: 1080px) {
+    .listBox-mainDiv .list-box img {
+      max-height: 15px; } }
+  @media screen and (max-width: 1080px) {
+    .listBox-mainDiv .list-box .list-box-ul {
+      display: none; } }
+  .listBox-mainDiv .list-box .list-box-ul h6 {
     font-size: 16px;
     font-family: "AvenirHeavy";
     color: #222222;
     margin-bottom: 40px; }
-  .listBox-mainDiv .list-box .list-box-a {
+  .listBox-mainDiv .list-box .list-box-ul .list-box-a {
     font-size: 16px;
     font-family: "AvenirBook";
     color: #222222;
     line-height: 2.5; }
-  .listBox-mainDiv .list-box .inside-box-ul .inside-box-a {
+  .listBox-mainDiv .list-box .list-box-ul .inside-box-ul .inside-box-a {
     font-size: 16px;
     font-family: "AvenirBook";
     color: #222222;
     line-height: 2.5; }
-  .listBox-mainDiv .list-box .inside-margin {
+  .listBox-mainDiv .list-box .list-box-ul .inside-margin {
     margin: 40px 0; }
 
 .footer-div {

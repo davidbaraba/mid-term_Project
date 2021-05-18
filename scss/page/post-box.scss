@@ -1,8 +1,36 @@
 .article-div{
     flex-wrap: wrap;
     justify-content: space-between;
+    
+    @media screen and (max-width: 1080px) {
+        justify-content: center;
+    }
     .post-article{
         margin-bottom: 40px;
+        @media screen and (max-width: 1570px) {
+            &:nth-child(7){
+                display: none;
+            }
+            &:nth-child(8){
+                display: none;
+            }
+        }
+        @media screen and (max-width: 1225px) {
+            &:nth-child(5){
+                display: none;
+            }
+            &:nth-child(6){
+                display: none;
+            }
+        }
+        @media screen and (max-width: 960px) {
+            &:nth-child(3){
+                display: none;
+            }
+            &:nth-child(4){
+                display: none;
+            }
+        }
         .post-article-image{
             max-width: 289px;
             width: 100%;

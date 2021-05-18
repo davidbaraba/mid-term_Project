@@ -8,11 +8,20 @@
             flex-wrap: wrap;
             justify-content: center;
         }
+        @media screen and (max-width: 900px) {
+            justify-content: space-between;
+        }
+        @media screen and (max-width: 360px) {
+            justify-content: center;
+        }
         .post-nav-ul{
             display: flex;
             @media screen and (max-width: 1360px) {
                 flex-wrap: wrap;
                 margin-bottom: 10px;
+            }
+            @media screen and (max-width: 900px) {
+                display: none;
             }
             .post-nav-li{
                 padding-right: 50px;
@@ -35,6 +44,27 @@
                     border-radius: 12px;
                     font-family: 'AvenirHeavy';
                 }
+            }
+        }
+        .responsive-nav-burger{
+            display: none;
+            @media screen and (max-width: 900px) {
+                display: flex;
+                align-items: center;
+                border-radius: 12px;
+                padding: 8px;
+                border: 1px solid #D8D8D8;
+                font-size: 16px;
+                font-family: "AvenirHeavy";
+                color: #222222;
+                cursor: pointer;
+            }
+            @media screen and (max-width: 360px) {
+                margin-bottom: 10px;
+            }
+            img{
+                max-width: 40px;
+                max-height: 24px;
             }
         }
         .filter-box{

@@ -2,23 +2,51 @@
     justify-content: space-between;
     padding: 70px 0;
     border-bottom: 1px solid gray;
+    @media screen and (max-width: 1080px) {
+        flex-wrap: wrap;
+    }
     .list-box{
+        img{
+            display: none;
+            @media screen and (max-width: 1080px) {
+                display: flex;
+                cursor: pointer;
+            }
+        }
+        @media screen and (max-width: 1080px) {
+            display: flex;
+        }
         h6{
-            @include text-styles (16px, 'AvenirHeavy', $black_color);
-            margin-bottom: 40px
+            @media screen and (max-width: 1080px) {
+                margin-bottom: 10px;
+            }
         }
-        .list-box-a{
-            @include text-styles (16px, 'AvenirBook', $black_color);
-            line-height: 2.5;
+        img{
+            @media screen and (max-width: 1080px) {
+                max-height: 15px;
+            }
         }
-        .inside-box-ul{
-            .inside-box-a{
+        .list-box-ul{
+            @media screen and (max-width: 1080px) {
+                display: none;
+            }
+            h6{
+                @include text-styles (16px, 'AvenirHeavy', $black_color);
+                margin-bottom: 40px;
+            }
+            .list-box-a{
                 @include text-styles (16px, 'AvenirBook', $black_color);
                 line-height: 2.5;
             }
-        }
-        .inside-margin{
-            margin: 40px 0;
+            .inside-box-ul{
+                .inside-box-a{
+                    @include text-styles (16px, 'AvenirBook', $black_color);
+                    line-height: 2.5;
+                }
+            }
+            .inside-margin{
+                margin: 40px 0;
+            }
         }
     }
 }

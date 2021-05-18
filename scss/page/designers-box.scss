@@ -18,11 +18,17 @@
     .designers-div{
         flex-wrap: wrap;
         justify-content: space-between;
+        @media screen and (max-width: 1370px) {
+            justify-content: center;
+        }
         .designers-article{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            @media screen and (max-width: 1370px) {
+                margin-bottom: 10px;
+            }
             img{
                 max-width: 132px;
                 cursor: pointer;

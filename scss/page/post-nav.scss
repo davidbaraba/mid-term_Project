@@ -4,10 +4,21 @@
         @include horizontal (space-between);
         display: flex;
         align-items: center;
+        @media screen and (max-width: 1360px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
         .post-nav-ul{
             display: flex;
+            @media screen and (max-width: 1360px) {
+                flex-wrap: wrap;
+                margin-bottom: 10px;
+            }
             .post-nav-li{
                 padding-right: 50px;
+                @media screen and (max-width: 1360px) {
+                    padding-right: 25px;
+                }
                 .post-nav-a{
                     @include text-styles(16px, 'AvenirBook', $black_color);
                     @include hover-transition ( .3s);
@@ -34,6 +45,9 @@
             @include text-styles(16px, 'AvenirHeavy', $black_color);
             padding: 16px 23px;
             cursor: pointer;
+            @media screen and (max-width: 1360px) {
+                padding: 8px 11px;
+            }
             img{
                 padding-right: 15px;
             }

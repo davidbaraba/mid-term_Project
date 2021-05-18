@@ -78,6 +78,10 @@ a {
   max-width: 1231px;
   width: 100%;
   margin: 0 auto; }
+  @media screen and (max-width: 1370px) {
+    .container {
+      padding: 0 10px;
+      box-sizing: border-box; } }
 
 .flex {
   display: flex; }
@@ -342,10 +346,21 @@ a {
     justify-content: space-between;
     display: flex;
     align-items: center; }
+    @media screen and (max-width: 1360px) {
+      .post-nav-div .post-nav {
+        flex-wrap: wrap;
+        justify-content: center; } }
     .post-nav-div .post-nav .post-nav-ul {
       display: flex; }
+      @media screen and (max-width: 1360px) {
+        .post-nav-div .post-nav .post-nav-ul {
+          flex-wrap: wrap;
+          margin-bottom: 10px; } }
       .post-nav-div .post-nav .post-nav-ul .post-nav-li {
         padding-right: 50px; }
+        @media screen and (max-width: 1360px) {
+          .post-nav-div .post-nav .post-nav-ul .post-nav-li {
+            padding-right: 25px; } }
         .post-nav-div .post-nav .post-nav-ul .post-nav-li .post-nav-a {
           font-size: 16px;
           font-family: "AvenirBook";
@@ -371,6 +386,9 @@ a {
       color: #222222;
       padding: 16px 23px;
       cursor: pointer; }
+      @media screen and (max-width: 1360px) {
+        .post-nav-div .post-nav .filter-box {
+          padding: 8px 11px; } }
       .post-nav-div .post-nav .filter-box img {
         padding-right: 15px; }
 

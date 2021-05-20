@@ -31,13 +31,13 @@
                     padding-right: 25px;
                 }
                 .post-nav-a{
-                    @include text-styles(16px, 'Avenir LT Pro Book', $black_color);
+                    font-family: 'Avenir LT Pro Book';
+                    @include text-styles(16px, $black_color);
                     @include hover-transition ( .3s);
                     &:hover{
                         background-color: #F2F2F2;
                             padding: 20px;
                             border-radius: 12px;
-                            font-family: 'Avenir LT Pro 55 Heavy';
                     }
                 }
                 .post-nav-a.first{
@@ -74,7 +74,8 @@
             align-items: center;
             border-radius: 12px;
             border: 1px solid #D8D8D8;
-            @include text-styles(16px, 'Avenir LT Pro 55 Heavy', $black_color);
+            font-family: 'Avenir LT Pro 55 Heavy';
+            @include text-styles(16px, $black_color);
             padding: 16px 23px;
             cursor: pointer;
             @media screen and (max-width: 1360px) {

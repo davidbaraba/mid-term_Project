@@ -8,9 +8,8 @@
     flex-wrap: $wrapProp;
 }
 
-@mixin text-styles ($size, $family, $color) {
+@mixin text-styles ($size, $color) {
     font-size: $size;
-    font-family: $family;
     color: $color;
 }
 

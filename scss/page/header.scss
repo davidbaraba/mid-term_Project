@@ -23,7 +23,8 @@
                 border: none;
                 border-radius: 12px;
                 padding: 18px 272px 18px 20px;
-                @include text-styles(14px, 'Avenir LT Pro 55 Heavy', $black_color);
+                font-family: 'Avenir LT Pro 55 Heavy';
+                @include text-styles(14px, $black_color);
                 @media screen and (max-width: 1370px) {
                     padding-right: 0;
                     margin-right: 10px;
@@ -67,7 +68,8 @@
                         }
                     }
                     .first .nav-a{
-                        @include text-styles(14px, 'Avenir LT Pro 55 Heavy', $red_color);
+                        font-family: 'Avenir LT Pro 55 Heavy';
+                        @include text-styles(14px, $red_color);
                     }
                     .last .nav-a{
                         padding: 20px 40px;

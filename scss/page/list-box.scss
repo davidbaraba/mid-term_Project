@@ -39,16 +39,19 @@
                 display: none;
             }
             h6{
-                @include text-styles (16px, 'Avenir LT Pro 55 Heavy', $black_color);
+                font-family: 'Avenir LT Pro 55 Heavy';
+                @include text-styles (16px, $black_color);
                 margin-bottom: 40px;
             }
             .list-box-a{
-                @include text-styles (16px, 'Avenir LT Pro Book', $black_color);
+                font-family: 'Avenir LT Pro Book';
+                @include text-styles (16px, $black_color);
                 line-height: 2.5;
             }
             .inside-box-ul{
                 .inside-box-a{
-                    @include text-styles (16px, 'Avenir LT Pro Book', $black_color);
+                    font-family: 'Avenir LT Pro Book';
+                    @include text-styles (16px, $black_color);
                     line-height: 2.5;
                 }
             }

@@ -334,8 +334,8 @@ a {
         border: none;
         border-radius: 12px;
         padding: 18px 272px 18px 20px;
+        font-family: 'Avenir LT Pro 55 Heavy';
         font-size: 14px;
-        font-family: "Avenir LT Pro 55 Heavy";
         color: #222222; }
         @media screen and (max-width: 1370px) {
           .main .header .container-flex .search-box input {
@@ -371,8 +371,8 @@ a {
           .main .header .container-flex .nav .nav-ul .nav-li:not(.first):hover {
             transform: scale(1.2); }
         .main .header .container-flex .nav .nav-ul .first .nav-a {
+          font-family: 'Avenir LT Pro 55 Heavy';
           font-size: 14px;
-          font-family: "Avenir LT Pro 55 Heavy";
           color: #FF2288; }
         .main .header .container-flex .nav .nav-ul .last .nav-a {
           padding: 20px 40px;
@@ -447,15 +447,14 @@ a {
           .post-nav-div .post-nav .post-nav-ul .post-nav-li {
             padding-right: 25px; } }
         .post-nav-div .post-nav .post-nav-ul .post-nav-li .post-nav-a {
+          font-family: 'Avenir LT Pro Book';
           font-size: 16px;
-          font-family: "Avenir LT Pro Book";
           color: #222222;
           transition: 0.3s; }
           .post-nav-div .post-nav .post-nav-ul .post-nav-li .post-nav-a:hover {
             background-color: #F2F2F2;
             padding: 20px;
-            border-radius: 12px;
-            font-family: 'Avenir LT Pro 55 Heavy'; }
+            border-radius: 12px; }
         .post-nav-div .post-nav .post-nav-ul .post-nav-li .post-nav-a.first {
           background-color: #F2F2F2;
           padding: 20px;
@@ -485,8 +484,8 @@ a {
       align-items: center;
       border-radius: 12px;
       border: 1px solid #D8D8D8;
+      font-family: 'Avenir LT Pro 55 Heavy';
       font-size: 16px;
-      font-family: "Avenir LT Pro 55 Heavy";
       color: #222222;
       padding: 16px 23px;
       cursor: pointer; }
@@ -543,8 +542,8 @@ a {
       max-width: 289px;
       width: 100%;
       margin-bottom: 30px;
+      font-family: 'Avenir LT Pro Medium';
       font-size: 18px;
-      font-family: "Avenir LT Pro Medium";
       color: #222222; }
       @media screen and (max-width: 360px) {
         .article-div .post-article h5 {
@@ -559,13 +558,12 @@ a {
     cursor: pointer;
     padding: 20px 100px;
     border-radius: 12px;
+    font-family: 'Avenir LT Pro 55 Heavy';
     font-size: 16px;
-    font-family: "Avenir LT Pro 55 Heavy";
     color: #222222;
     transition: 0.3s; }
     .btn-box .article-btn:hover {
       font-size: 26px;
-      font-family: "Avenir LT Pro 55 Heavy";
       color: #222222; }
     @media screen and (max-width: 1080px) {
       .btn-box .article-btn {
@@ -575,7 +573,6 @@ a {
         margin: 50px 0; }
         .btn-box .article-btn:hover {
           font-size: 20px;
-          font-family: "Avenir LT Pro 55 Heavy";
           color: #222222; } }
     @media screen and (max-width: 360px) {
       .btn-box .article-btn {
@@ -585,7 +582,6 @@ a {
         margin: 30px 0; }
         .btn-box .article-btn:hover {
           font-size: 15px;
-          font-family: "Avenir LT Pro 55 Heavy";
           color: #222222; } }
 
 .designers-box {
@@ -597,15 +593,15 @@ a {
     align-items: center;
     margin-bottom: 54px; }
     .designers-box .designers-box-title h4 {
+      font-family: 'Avenir LT Pro 55 Heavy';
       font-size: 32px;
-      font-family: "Avenir LT Pro 55 Heavy";
       color: #222222; }
       @media screen and (max-width: 1080px) {
         .designers-box .designers-box-title h4 {
           font-size: 20px; } }
     .designers-box .designers-box-title h6 {
+      font-family: 'Avenir LT Pro 55 Heavy';
       font-size: 14px;
-      font-family: "Avenir LT Pro 55 Heavy";
       color: #222222; }
   .designers-box .designers-div {
     flex-wrap: wrap;
@@ -628,15 +624,15 @@ a {
         margin-top: 15px;
         max-width: 70px;
         text-align: center;
+        font-family: 'Avenir LT Pro Medium';
         font-size: 16px;
-        font-family: "Avenir LT Pro Medium";
         color: #222222;
         cursor: pointer; }
       .designers-box .designers-div .designers-article h6 {
         margin-top: 10px;
         text-align: center;
+        font-family: 'Avenir LT Pro Book';
         font-size: 12px;
-        font-family: "Avenir LT Pro Book";
         color: #222222; }
       .designers-box .designers-div .designers-article button {
         margin-top: 17px;
@@ -644,8 +640,8 @@ a {
         border: none;
         border-radius: 12px;
         border: 1px solid #D8D8D8;
+        font-family: 'Avenir LT Pro 55 Heavy';
         font-size: 14px;
-        font-family: "Avenir LT Pro 55 Heavy";
         color: #222222;
         background-color: #FFFFFF;
         cursor: pointer; }
@@ -686,18 +682,18 @@ a {
     .listBox-mainDiv .list-box .list-box-ul {
       display: none; } }
   .listBox-mainDiv .list-box .list-box-ul h6 {
+    font-family: 'Avenir LT Pro 55 Heavy';
     font-size: 16px;
-    font-family: "Avenir LT Pro 55 Heavy";
     color: #222222;
     margin-bottom: 40px; }
   .listBox-mainDiv .list-box .list-box-ul .list-box-a {
+    font-family: 'Avenir LT Pro Book';
     font-size: 16px;
-    font-family: "Avenir LT Pro Book";
     color: #222222;
     line-height: 2.5; }
   .listBox-mainDiv .list-box .list-box-ul .inside-box-ul .inside-box-a {
+    font-family: 'Avenir LT Pro Book';
     font-size: 16px;
-    font-family: "Avenir LT Pro Book";
     color: #222222;
     line-height: 2.5; }
   .listBox-mainDiv .list-box .list-box-ul .inside-margin {
@@ -715,15 +711,15 @@ a {
     .footer-div .social-ul .social-img:hover {
       transform: scale(1.5); }
   .footer-div .footer-logo h4 {
+    font-family: 'Avenir LT Pro Book';
     font-size: 16px;
-    font-family: "Avenir LT Pro Book";
     color: #222222; }
     @media screen and (max-width: 360px) {
       .footer-div .footer-logo h4 {
         font-size: 8px; } }
   .footer-div .footer-logo span {
+    font-family: 'Avenir LT Pro 65 Black';
     font-size: 16px;
-    font-family: "Avenir LT Pro 65 Black";
     color: #222222; }
     @media screen and (max-width: 360px) {
       .footer-div .footer-logo span {
@@ -804,8 +800,8 @@ a {
                 text-decoration: underline;
                 color: #FF2288; } }
       .product-div .table .table-tbody .product-tr {
+        font-family: 'Avenir LT Pro 55 Heavy';
         font-size: 16px;
-        font-family: "Avenir LT Pro 55 Heavy";
         color: #AFAFAF; }
         .product-div .table .table-tbody .product-tr .responsive-td {
           display: none; }

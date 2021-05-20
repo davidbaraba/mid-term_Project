@@ -91,7 +91,8 @@
                 .responsive-td{
                     display: none;
                 }
-                @include text-styles(16px, 'Avenir LT Pro 55 Heavy', $gray_color);
+                font-family: 'Avenir LT Pro 55 Heavy';
+                @include text-styles(16px, $gray_color);
                 @media screen and (max-width: 1080px) {
                     font-size: 10px;
                     .for-responsive{

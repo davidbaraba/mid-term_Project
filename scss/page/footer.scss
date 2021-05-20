@@ -14,10 +14,16 @@
     }
     .footer-logo{
         h4{
-            @include text-styles(16px, 'AvenirBook', $black_color);
+            @include text-styles(16px, 'Avenir LT Pro Book', $black_color);
+            @media screen and (max-width: 360px) {
+                font-size: 8px;
+            }
         }
         span{
-            @include text-styles(16px, 'AvenirBlack', $black_color);
+            @include text-styles(16px, 'Avenir LT Pro 65 Black', $black_color);
+            @media screen and (max-width: 360px) {
+                font-size: 8px;
+            }
         }
     }
 }

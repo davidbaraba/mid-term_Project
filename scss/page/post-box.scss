@@ -2,12 +2,15 @@
     flex-wrap: wrap;
     justify-content: space-between;
     
-    @media screen and (max-width: 1080px) {
+    @media screen and (max-width: 1560px) {
         justify-content: center;
+    }
+    @media screen and (max-width: 360px) {
+        text-align: center;
     }
     .post-article{
         margin-bottom: 40px;
-        @media screen and (max-width: 1570px) {
+        @media screen and (max-width: 1560px) {
             &:nth-child(7){
                 display: none;
             }
@@ -15,7 +18,7 @@
                 display: none;
             }
         }
-        @media screen and (max-width: 1225px) {
+        @media screen and (max-width: 1360px) {
             &:nth-child(5){
                 display: none;
             }
@@ -23,17 +26,12 @@
                 display: none;
             }
         }
-        @media screen and (max-width: 960px) {
-            &:nth-child(3){
-                display: none;
-            }
-            &:nth-child(4){
-                display: none;
-            }
-        }
         .post-article-image{
             max-width: 289px;
             width: 100%;
+            @media screen and (max-width: 360px) {
+                max-width: 150px;
+            }
         }
         .plus-icon{
             top: 30px;
@@ -59,7 +57,10 @@
             max-width: 289px;
             width: 100%;
             margin-bottom: 30px;
-            @include text-styles (18px, 'AvenirMedium', $black_color);
+            @include text-styles (18px, 'Avenir LT Pro Medium', $black_color);
+            @media screen and (max-width: 360px) {
+                max-width: 150px;
+            }
         }
     }
 }
@@ -72,11 +73,28 @@
         cursor: pointer;
         padding: 20px 100px;
         border-radius: 12px;
-        @include text-styles (16px, 'AvenirHeavy', $black_color);
+        @include text-styles (16px, 'Avenir LT Pro 55 Heavy', $black_color);
         @include hover-transition ( .3s);
         &:hover{
-            @include text-styles (26px, 'AvenirHeavy', $black_color);
+            @include text-styles (26px, 'Avenir LT Pro 55 Heavy', $black_color);
+        }
+        @media screen and (max-width: 1080px) {
+            padding: 15px 50px;
+            font-size: 12px;
+            border-radius: 10px;
+            margin: 50px 0;
+            &:hover{
+                @include text-styles (20px, 'Avenir LT Pro 55 Heavy', $black_color);
+            }
+        }
+        @media screen and (max-width: 360px) {
+            padding: 10px 30px;
+            font-size: 8px;
+            border-radius: 8px;
+            margin: 30px 0;
+            &:hover{
+                @include text-styles (15px, 'Avenir LT Pro 55 Heavy', $black_color);
+            }
         }
     }
-   
 }

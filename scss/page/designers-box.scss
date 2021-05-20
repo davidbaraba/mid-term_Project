@@ -6,13 +6,15 @@
     .designers-box-title{
         justify-content: space-between;
         align-items: center;
-        // margin-top: 67px;
         margin-bottom: 54px;
         h4{
-            @include text-styles (32px, 'AvenirHeavy', $black_color);
+            @include text-styles (32px, 'Avenir LT Pro 55 Heavy', $black_color);
+            @media screen and (max-width: 1080px) {
+                font-size: 20px;
+            }
         }
         h6{
-            @include text-styles (14px, 'AvenirHeavy', $black_color);
+            @include text-styles (14px, 'Avenir LT Pro 55 Heavy', $black_color);
         }
     }
     .designers-div{
@@ -37,13 +39,13 @@
                 margin-top: 15px;
                 max-width: 70px;
                 text-align: center;
-                @include text-styles (16px, 'AvenirMedium', $black_color);
+                @include text-styles (16px, 'Avenir LT Pro Medium', $black_color);
                 cursor: pointer;
             }
             h6{
                 margin-top: 10px;
                 text-align: center;
-                @include text-styles (12px, 'AvenirBook', $black_color);
+                @include text-styles (12px, 'Avenir LT Pro Book', $black_color);
             }
             button{
                 margin-top: 17px;
@@ -51,7 +53,7 @@
                 border: none;
                 border-radius: 12px;
                 border: 1px solid #D8D8D8;
-                @include text-styles (14px, 'AvenirHeavy', $black_color);
+                @include text-styles (14px, 'Avenir LT Pro 55 Heavy', $black_color);
                 background-color: $white_color;
                 cursor: pointer;
             }

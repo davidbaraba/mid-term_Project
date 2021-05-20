@@ -4,22 +4,106 @@
     .table{
         display: flex;
         margin-bottom: 123px;
+        @media screen and (max-width: 1080px) {
+            margin-bottom: 50px;
+        }
         .table-tbody{
             width: 100%;
             .table-th{
-                padding-top: 0!important;
-                padding-left: 65px;
+                font-family: 'Avenir LT Pro 55 Heavy';
+                .icon{
+                    display: none;
+                    @media screen and (max-width: 1080px) {
+                        display: flex;
+                    }
+                }
+                :nth-child(1){
+                    padding-left: 0;
+                }
+                :nth-child(2){
+                    padding-left: 65px;
+                }
+                :nth-child(3){
+                    padding-left: 65px;
+                }
+                :nth-child(4){
+                    padding-left: 65px;
+                }
+                :nth-child(5){
+                    padding-left: 65px;
+                }
+                :nth-child(6){
+                    padding-left: 65px;
+                }
+                @media screen and (max-width: 1080px) {
+                    padding-top: 29px!important;
+                    font-size: 12px;
+                    padding-left: 0px;
+                    :nth-child(1){
+                        display: none;
+                    }
+                    :nth-child(2){
+                        display: none;
+                    }
+                    :nth-child(3){
+                        padding-left: 0;
+                    }
+                    :nth-child(4){
+                        padding-left: 0;
+                    }
+                    :nth-child(5){
+                        padding-left: 0;
+                    }
+                    :nth-child(6){
+                        padding-left: 0;
+                    }
+                }
+                @media screen and (max-width: 360px) {
+                    font-size: 7px;
+                }
             }
             .table-tr{
                 display: flex;
                 justify-content: space-between;
-                flex-wrap: wrap;
                 border-bottom: 1px solid $gray_color;
                 padding-bottom: 32px;
                 padding-top: 29px;
+                @media screen and (max-width: 1080px) {
+                    :nth-child(1){
+                        display: none;
+                    }
+                    :nth-child(2){
+                        display: none;
+                    }
+                }
+                .icon{
+                    display: none;
+                    @media screen and (max-width: 1080px) {
+                        display: flex;
+                        &:hover{
+                            text-decoration: underline;
+                            color: $red_color;
+                        }
+                    }
+                }
             }
             .product-tr{
-                @include text-styles(16px, 'AvenirHeavy', $gray_color);
+                .responsive-td{
+                    display: none;
+                }
+                @include text-styles(16px, 'Avenir LT Pro 55 Heavy', $gray_color);
+                @media screen and (max-width: 1080px) {
+                    font-size: 10px;
+                    .for-responsive{
+                        display: none;
+                    }
+                    .responsive-td{
+                        display: flex;
+                    }
+                }
+                @media screen and (max-width: 360px) {
+                    font-size: 7px;
+                }
                 &:hover{
                     background-color: #E7E7E7;
                     color: $black_color;

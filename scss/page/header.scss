@@ -1,16 +1,23 @@
 .main{
     width: 100%;
     .header{
+        position: fixed;
+        top: 0;
+        width: calc(100% - 319px);
+        background-color: white;
+        z-index: 100;
+        box-sizing: border-box;
         padding: 30px 90px 0 25px;
+        border-bottom: 1px solid #AFAFAF;
         @media screen and (max-width: 1080px) {
             padding: 30px 10px 0 10px;
+            width: calc(100% - 93.33px);
         }
         .container-flex{
             @include horizontal (space-between);
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            border-bottom: 1px solid $gray_color;
             padding-bottom: 30px;
             .search-box{
                 position: relative;

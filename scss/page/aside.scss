@@ -17,16 +17,15 @@
         @include horizontal (space-between);
         flex-wrap: wrap;
         @media screen and (max-width: 1080px) {
-            justify-content: center;
+            @include horizontal (center);
         }
         h3{
-            font-family: 'Avenir LT Pro 65 Black';
-            font-size: 24px;
+            @include text-styles(24px, 'AvenirBlack', $white_color);
             @media screen and (max-width: 1080px) {
                 font-size: 14px;
             }
             span{
-                font-family: 'Avenir LT Pro Book';
+                font-family: 'AvenirBook';
                 @media screen and (max-width: 1080px) {
                     font-size: 12px;
                 }
@@ -72,14 +71,14 @@
                 margin-bottom: 10px;
             }
             &:hover:not(.active){
-                background-color: #FF2288;
+                background-color: $red_color;
                 padding: 15px 0 15px 0;
                 border-radius: 12px;
             }
             .aside-nav-a{
                 @include align-flex-with-wrap(flex, center, wrap);
                 @media screen and (max-width: 1080px) {
-                    justify-content: center;
+                    @include horizontal (center);
                     flex-direction: column;
                 }
                 img{
@@ -90,9 +89,7 @@
                 }
                 h6{
                     margin-left: 15px;
-                    font-size: 16px;
-                    font-family: 'Avenir LT Pro Medium';
-                    color: $white_color;
+                    @include text-styles(16px, 'AvenirMedium', $white_color);
                     @media screen and (max-width: 1080px) {
                         margin-left: 0;
                     }
@@ -116,8 +113,7 @@
     .aside-following-box{
         h6{
             margin: 40px 0 30px 30px;
-            font-family: 'Avenir LT Pro 55 Heavy';
-            font-size: 12px;
+            @include text-styles(12px, 'AvenirHeavy', $white_color);
             @media screen and (max-width: 1080px) {
                 margin: 30px 10px 30px 0;
             }
@@ -136,7 +132,7 @@
                     @include align-flex-with-wrap(flex, center, wrap);
                     @media screen and (max-width: 1080px) {
                         display: flex;
-                        justify-content: center;
+                        @include horizontal (center);
                         flex-direction: column;
                         text-align: center;
                     }
@@ -148,9 +144,7 @@
                         }
                     }
                     h6{
-                        color: $white_color;
-                        font-size: 16px;
-                        font-family: 'Avenir LT Pro Medium';
+                        @include text-styles(16px, 'AvenirMedium', $white_color);
                         @media screen and (max-width: 1080px) {
                             margin: 0 0 10px 0;
                         }
@@ -159,11 +153,8 @@
             }
         }
     }
-    
     .loadMore{
-        font-family: 'Avenir LT Pro 55 Heavy';
-        font-size: 14px;
-        color: $white_color;
+        @include text-styles(14px, 'AvenirHeavy', $white_color);
         margin-left: 30px;
         @media screen and (max-width: 1080px) {
             margin-left: 6px;

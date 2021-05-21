@@ -6,20 +6,20 @@
         align-items: center;
         @media screen and (max-width: 1360px) {
             flex-wrap: wrap;
-            justify-content: center;
+            @include horizontal (center);
         }
         @media screen and (max-width: 1080px) {
-            justify-content: space-between;
+            @include horizontal (space-between);
         }
         @media screen and (max-width: 360px) {
-            justify-content: center;
+            @include horizontal (center);
             flex-direction: column;
         }
         .post-nav-ul{
             display: flex;
             @media screen and (max-width: 1180px) {
                 width: 100%;
-                justify-content: center;
+                @include horizontal (center);
                 margin-bottom: 10px;
             }
             @media screen and (max-width: 1080px) {
@@ -31,20 +31,20 @@
                     padding-right: 25px;
                 }
                 .post-nav-a{
-                    font-family: 'Avenir LT Pro Book';
-                    @include text-styles(16px, $black_color);
+                    @include text-styles(16px, 'AvenirBook', $black_color);
                     @include hover-transition ( .3s);
                     &:hover{
                         background-color: #F2F2F2;
-                            padding: 20px;
-                            border-radius: 12px;
+                        padding: 20px;
+                        border-radius: 12px;
+                        font-family: 'AvenirHeavy';
                     }
                 }
                 .post-nav-a.first{
                     background-color: #F2F2F2;
                     padding: 20px;
                     border-radius: 12px;
-                    font-family: 'Avenir LT Pro 55 Heavy';
+                    font-family: 'AvenirHeavy';
                 }
             }
         }
@@ -57,8 +57,8 @@
                 padding: 8px;
                 border: 1px solid #D8D8D8;
                 font-size: 16px;
-                font-family: "Avenir LT Pro 55 Heavy";
-                color: #222222;
+                font-family: "AvenirHeavy";
+                color: $black_color;
                 cursor: pointer;
             }
             @media screen and (max-width: 360px) {
@@ -74,8 +74,7 @@
             align-items: center;
             border-radius: 12px;
             border: 1px solid #D8D8D8;
-            font-family: 'Avenir LT Pro 55 Heavy';
-            @include text-styles(16px, $black_color);
+            @include text-styles(16px, 'AvenirHeavy', $black_color);
             padding: 16px 23px;
             cursor: pointer;
             @media screen and (max-width: 1360px) {

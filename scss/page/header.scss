@@ -23,8 +23,7 @@
                 border: none;
                 border-radius: 12px;
                 padding: 18px 272px 18px 20px;
-                font-family: 'Avenir LT Pro 55 Heavy';
-                @include text-styles(14px, $black_color);
+                @include text-styles(14px, 'AvenirHeavy', $black_color);
                 @media screen and (max-width: 1370px) {
                     padding-right: 0;
                     margin-right: 10px;
@@ -44,7 +43,7 @@
                 @media (max-width: 1080px){
                     flex-direction: row;
                     display: flex;
-                    justify-content: space-between;
+                    @include horizontal (space-between);
                     width: 100%;
                     align-items: center;
                 }
@@ -68,8 +67,7 @@
                         }
                     }
                     .first .nav-a{
-                        font-family: 'Avenir LT Pro 55 Heavy';
-                        @include text-styles(14px, $red_color);
+                        @include text-styles(14px, 'AvenirHeavy', $red_color);
                     }
                     .last .nav-a{
                         padding: 20px 40px;

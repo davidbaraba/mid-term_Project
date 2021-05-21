@@ -1,9 +1,8 @@
 .article-div{
     flex-wrap: wrap;
-    justify-content: space-between;
-    
+    @include horizontal (space-between);
     @media screen and (max-width: 1560px) {
-        justify-content: center;
+        @include horizontal (center);
     }
     @media screen and (max-width: 360px) {
         text-align: center;
@@ -57,8 +56,7 @@
             max-width: 289px;
             width: 100%;
             margin-bottom: 30px;
-            font-family: 'Avenir LT Pro Medium';
-            @include text-styles (18px, $black_color);
+            @include text-styles (18px, 'AvenirMedium', $black_color);
             @media screen and (max-width: 360px) {
                 max-width: 150px;
             }
@@ -67,18 +65,17 @@
 }
 .btn-box{
     display: flex;
-    justify-content: center;
+    @include horizontal (center);
     .article-btn{
         margin: 70px 0;
         border: none;
         cursor: pointer;
         padding: 20px 100px;
         border-radius: 12px;
-        font-family: 'Avenir LT Pro 55 Heavy';
-        @include text-styles (16px, $black_color);
+        @include text-styles (16px, 'AvenirHeavy', $black_color);
         @include hover-transition ( .3s);
         &:hover{
-            @include text-styles (26px, $black_color);
+            @include text-styles (26px, 'AvenirHeavy', $black_color);
         }
         @media screen and (max-width: 1080px) {
             padding: 15px 50px;
@@ -86,7 +83,7 @@
             border-radius: 10px;
             margin: 50px 0;
             &:hover{
-                @include text-styles (20px, $black_color);
+                @include text-styles (20px, 'AvenirHeavy', $black_color);
             }
         }
         @media screen and (max-width: 360px) {
@@ -95,7 +92,7 @@
             border-radius: 8px;
             margin: 30px 0;
             &:hover{
-                @include text-styles (15px, $black_color);
+                @include text-styles (15px, 'AvenirHeavy', $black_color);
             }
         }
     }

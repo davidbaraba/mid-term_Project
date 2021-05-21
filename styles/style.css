@@ -1,98 +1,27 @@
 @font-face {
-  font-family: 'Avenir LT Pro 65 Black';
-  src: url("../fonts/AvenirLTPro-Black.eot");
-  src: url("../fonts/AvenirLTPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirLTPro-Black.woff2") format("woff2"), url("../fonts/AvenirLTPro-Black.woff") format("woff"), url("../fonts/AvenirLTPro-Black.ttf") format("truetype"), url("../fonts/AvenirLTPro-Black.svg#AvenirLTPro-Black") format("svg");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap; }
+  font-family: 'AvenirMedium';
+  src: url("../fonts/AvenirMedium.eot");
+  src: url("../fonts/AvenirMedium.eot") format("embedded-opentype"), url("../fonts/AvenirMedium.woff2") format("woff2"), url("../fonts/AvenirMedium.woff") format("woff"), url("../fonts/AvenirMedium.ttf") format("truetype"), url("../fonts/AvenirMedium.svg#AvenirMedium") format("svg"); }
 
 @font-face {
-  font-family: 'Avenir LT Pro 65';
-  src: url("../fonts/AvenirLTPro-BlackOblique.eot");
-  src: url("../fonts/AvenirLTPro-BlackOblique.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirLTPro-BlackOblique.woff2") format("woff2"), url("../fonts/AvenirLTPro-BlackOblique.woff") format("woff"), url("../fonts/AvenirLTPro-BlackOblique.ttf") format("truetype"), url("../fonts/AvenirLTPro-BlackOblique.svg#AvenirLTPro-BlackOblique") format("svg");
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap; }
+  font-family: 'AvenirHeavy';
+  src: url("../fonts/AvenirHeavy.eot");
+  src: url("../fonts/AvenirHeavy.eot") format("embedded-opentype"), url("../fonts/AvenirHeavy.woff2") format("woff2"), url("../fonts/AvenirHeavy.woff") format("woff"), url("../fonts/AvenirHeavy.ttf") format("truetype"), url("../fonts/AvenirHeavy.svg#AvenirHeavy") format("svg"); }
 
 @font-face {
-  font-family: 'Avenir LT Pro Book';
-  src: url("../fonts/AvenirLTPro-Book.eot");
-  src: url("../fonts/AvenirLTPro-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirLTPro-Book.woff2") format("woff2"), url("../fonts/AvenirLTPro-Book.woff") format("woff"), url("../fonts/AvenirLTPro-Book.ttf") format("truetype"), url("../fonts/AvenirLTPro-Book.svg#AvenirLTPro-Book") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
+  font-family: 'AvenirBook';
+  src: url("../fonts/AvenirBook.eot");
+  src: url("../fonts/AvenirBook.eot") format("embedded-opentype"), url("../fonts/AvenirBook.woff2") format("woff2"), url("../fonts/AvenirBook.woff") format("woff"), url("../fonts/AvenirBook.ttf") format("truetype"), url("../fonts/AvenirBook.svg#AvenirBook") format("svg"); }
 
 @font-face {
-  font-family: 'Avenir LT Pro 45 Book';
-  src: url("../fonts/AvenirLTPro-BookOblique.eot");
-  src: url("../fonts/AvenirLTPro-BookOblique.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirLTPro-BookOblique.woff2") format("woff2"), url("../fonts/AvenirLTPro-BookOblique.woff") format("woff"), url("../fonts/AvenirLTPro-BookOblique.ttf") format("truetype"), url("../fonts/AvenirLTPro-BookOblique.svg#AvenirLTPro-BookOblique") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
+  font-family: 'AvenirBlack';
+  src: url("../fonts/AvenirBlack.eot");
+  src: url("../fonts/AvenirBlack.eot") format("embedded-opentype"), url("../fonts/AvenirBlack.woff2") format("woff2"), url("../fonts/AvenirBlack.woff") format("woff"), url("../fonts/AvenirBlack.ttf") format("truetype"), url("../fonts/AvenirBlack.svg#AvenirBlack") format("svg"); }
 
 @font-face {
-  font-family: 'Avenir LT Pro 55 Heavy';
-  src: url("../fonts/AvenirLTPro-Heavy.eot");
-  src: url("../fonts/AvenirLTPro-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirLTPro-Heavy.woff2") format("woff2"), url("../fonts/AvenirLTPro-Heavy.woff") format("woff"), url("../fonts/AvenirLTPro-Heavy.ttf") format("truetype"), url("../fonts/AvenirLTPro-Heavy.svg#AvenirLTPro-Heavy") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Avenir LT Pro 55 Roman';
-  src: url("../fonts/AvenirLTPro-HeavyOblique.eot");
-  src: url("../fonts/AvenirLTPro-HeavyOblique.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirLTPro-HeavyOblique.woff2") format("woff2"), url("../fonts/AvenirLTPro-HeavyOblique.woff") format("woff"), url("../fonts/AvenirLTPro-HeavyOblique.ttf") format("truetype"), url("../fonts/AvenirLTPro-HeavyOblique.svg#AvenirLTPro-HeavyOblique") format("svg");
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Avenir LT Pro avenir';
-  src: url("../fonts/AvenirLTPro-Light.eot");
-  src: url("../fonts/AvenirLTPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirLTPro-Light.woff2") format("woff2"), url("../fonts/AvenirLTPro-Light.woff") format("woff"), url("../fonts/AvenirLTPro-Light.ttf") format("truetype"), url("../fonts/AvenirLTPro-Light.svg#AvenirLTPro-Light") format("svg");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Avenir LT Pro 35';
-  src: url("../fonts/AvenirLTPro-LightOblique.eot");
-  src: url("../fonts/AvenirLTPro-LightOblique.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirLTPro-LightOblique.woff2") format("woff2"), url("../fonts/AvenirLTPro-LightOblique.woff") format("woff"), url("../fonts/AvenirLTPro-LightOblique.ttf") format("truetype"), url("../fonts/AvenirLTPro-LightOblique.svg#AvenirLTPro-LightOblique") format("svg");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Avenir LT Pro Medium';
-  src: url("../fonts/AvenirLTPro-Medium.eot");
-  src: url("../fonts/AvenirLTPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirLTPro-Medium.woff2") format("woff2"), url("../fonts/AvenirLTPro-Medium.woff") format("woff"), url("../fonts/AvenirLTPro-Medium.ttf") format("truetype"), url("../fonts/AvenirLTPro-Medium.svg#AvenirLTPro-Medium") format("svg");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Avenir LT Pro 65';
-  src: url("../fonts/AvenirLTPro-MediumOblique.eot");
-  src: url("../fonts/AvenirLTPro-MediumOblique.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirLTPro-MediumOblique.woff2") format("woff2"), url("../fonts/AvenirLTPro-MediumOblique.woff") format("woff"), url("../fonts/AvenirLTPro-MediumOblique.ttf") format("truetype"), url("../fonts/AvenirLTPro-MediumOblique.svg#AvenirLTPro-MediumOblique") format("svg");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Avenir LT Pro 55 Roman';
-  src: url("../fonts/AvenirLTPro-Oblique.eot");
-  src: url("../fonts/AvenirLTPro-Oblique.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirLTPro-Oblique.woff2") format("woff2"), url("../fonts/AvenirLTPro-Oblique.woff") format("woff"), url("../fonts/AvenirLTPro-Oblique.ttf") format("truetype"), url("../fonts/AvenirLTPro-Oblique.svg#AvenirLTPro-Oblique") format("svg");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Avenir LT Pro';
-  src: url("../fonts/AvenirLTPro-Roman.eot");
-  src: url("../fonts/AvenirLTPro-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirLTPro-Roman.woff2") format("woff2"), url("../fonts/AvenirLTPro-Roman.woff") format("woff"), url("../fonts/AvenirLTPro-Roman.ttf") format("truetype"), url("../fonts/AvenirLTPro-Roman.svg#AvenirLTPro-Roman") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
+  font-family: 'Avenir';
+  src: url("../fonts/AvenirRegular.eot");
+  src: url("../fonts/AvenirRegular.eot") format("embedded-opentype"), url("../fonts/AvenirRegular.woff2") format("woff2"), url("../fonts/AvenirRegular.woff") format("woff"), url("../fonts/AvenirRegular.ttf") format("truetype"), url("../fonts/AvenirRegular.svg#AvenirRegular") format("svg"); }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -149,7 +78,7 @@ a {
   max-width: 1231px;
   width: 100%;
   margin: 0 auto; }
-  @media screen and (max-width: 1370px) {
+  @media screen and (max-width: 1560px) {
     .container {
       padding: 0 10px !important;
       box-sizing: border-box; } }
@@ -185,13 +114,14 @@ a {
       .aside .aside-title {
         justify-content: center; } }
     .aside .aside-title h3 {
-      font-family: 'Avenir LT Pro 65 Black';
-      font-size: 24px; }
+      font-size: 24px;
+      font-family: "AvenirBlack";
+      color: #FFFFFF; }
       @media screen and (max-width: 1080px) {
         .aside .aside-title h3 {
           font-size: 14px; } }
       .aside .aside-title h3 span {
-        font-family: 'Avenir LT Pro Book'; }
+        font-family: 'AvenirBook'; }
         @media screen and (max-width: 1080px) {
           .aside .aside-title h3 span {
             font-size: 12px; } }
@@ -248,7 +178,7 @@ a {
         .aside .aside-nav-div .aside-nav-li .aside-nav-a h6 {
           margin-left: 15px;
           font-size: 16px;
-          font-family: 'Avenir LT Pro Medium';
+          font-family: "AvenirMedium";
           color: #FFFFFF; }
           @media screen and (max-width: 1080px) {
             .aside .aside-nav-div .aside-nav-li .aside-nav-a h6 {
@@ -266,8 +196,9 @@ a {
         margin-left: 0; }
   .aside .aside-following-box h6 {
     margin: 40px 0 30px 30px;
-    font-family: 'Avenir LT Pro 55 Heavy';
-    font-size: 12px; }
+    font-size: 12px;
+    font-family: "AvenirHeavy";
+    color: #FFFFFF; }
     @media screen and (max-width: 1080px) {
       .aside .aside-following-box h6 {
         margin: 30px 10px 30px 0; } }
@@ -293,15 +224,15 @@ a {
           margin-left: 0;
           margin-bottom: 10px; } }
     .aside .aside-following-box .following-ul .following-li .aside-following-a h6 {
-      color: #FFFFFF;
       font-size: 16px;
-      font-family: 'Avenir LT Pro Medium'; }
+      font-family: "AvenirMedium";
+      color: #FFFFFF; }
       @media screen and (max-width: 1080px) {
         .aside .aside-following-box .following-ul .following-li .aside-following-a h6 {
           margin: 0 0 10px 0; } }
   .aside .loadMore {
-    font-family: 'Avenir LT Pro 55 Heavy';
     font-size: 14px;
+    font-family: "AvenirHeavy";
     color: #FFFFFF;
     margin-left: 30px; }
     @media screen and (max-width: 1080px) {
@@ -334,8 +265,8 @@ a {
         border: none;
         border-radius: 12px;
         padding: 18px 272px 18px 20px;
-        font-family: 'Avenir LT Pro 55 Heavy';
         font-size: 14px;
+        font-family: "AvenirHeavy";
         color: #222222; }
         @media screen and (max-width: 1370px) {
           .main .header .container-flex .search-box input {
@@ -371,8 +302,8 @@ a {
           .main .header .container-flex .nav .nav-ul .nav-li:not(.first):hover {
             transform: scale(1.2); }
         .main .header .container-flex .nav .nav-ul .first .nav-a {
-          font-family: 'Avenir LT Pro 55 Heavy';
           font-size: 14px;
+          font-family: "AvenirHeavy";
           color: #FF2288; }
         .main .header .container-flex .nav .nav-ul .last .nav-a {
           padding: 20px 40px;
@@ -447,19 +378,20 @@ a {
           .post-nav-div .post-nav .post-nav-ul .post-nav-li {
             padding-right: 25px; } }
         .post-nav-div .post-nav .post-nav-ul .post-nav-li .post-nav-a {
-          font-family: 'Avenir LT Pro Book';
           font-size: 16px;
+          font-family: "AvenirBook";
           color: #222222;
           transition: 0.3s; }
           .post-nav-div .post-nav .post-nav-ul .post-nav-li .post-nav-a:hover {
             background-color: #F2F2F2;
             padding: 20px;
-            border-radius: 12px; }
+            border-radius: 12px;
+            font-family: 'AvenirHeavy'; }
         .post-nav-div .post-nav .post-nav-ul .post-nav-li .post-nav-a.first {
           background-color: #F2F2F2;
           padding: 20px;
           border-radius: 12px;
-          font-family: 'Avenir LT Pro 55 Heavy'; }
+          font-family: 'AvenirHeavy'; }
     .post-nav-div .post-nav .responsive-nav-burger {
       display: none; }
       @media screen and (max-width: 1080px) {
@@ -470,7 +402,7 @@ a {
           padding: 8px;
           border: 1px solid #D8D8D8;
           font-size: 16px;
-          font-family: "Avenir LT Pro 55 Heavy";
+          font-family: "AvenirHeavy";
           color: #222222;
           cursor: pointer; } }
       @media screen and (max-width: 360px) {
@@ -484,8 +416,8 @@ a {
       align-items: center;
       border-radius: 12px;
       border: 1px solid #D8D8D8;
-      font-family: 'Avenir LT Pro 55 Heavy';
       font-size: 16px;
+      font-family: "AvenirHeavy";
       color: #222222;
       padding: 16px 23px;
       cursor: pointer; }
@@ -542,8 +474,8 @@ a {
       max-width: 289px;
       width: 100%;
       margin-bottom: 30px;
-      font-family: 'Avenir LT Pro Medium';
       font-size: 18px;
+      font-family: "AvenirMedium";
       color: #222222; }
       @media screen and (max-width: 360px) {
         .article-div .post-article h5 {
@@ -558,12 +490,13 @@ a {
     cursor: pointer;
     padding: 20px 100px;
     border-radius: 12px;
-    font-family: 'Avenir LT Pro 55 Heavy';
     font-size: 16px;
+    font-family: "AvenirHeavy";
     color: #222222;
     transition: 0.3s; }
     .btn-box .article-btn:hover {
       font-size: 26px;
+      font-family: "AvenirHeavy";
       color: #222222; }
     @media screen and (max-width: 1080px) {
       .btn-box .article-btn {
@@ -573,6 +506,7 @@ a {
         margin: 50px 0; }
         .btn-box .article-btn:hover {
           font-size: 20px;
+          font-family: "AvenirHeavy";
           color: #222222; } }
     @media screen and (max-width: 360px) {
       .btn-box .article-btn {
@@ -582,6 +516,7 @@ a {
         margin: 30px 0; }
         .btn-box .article-btn:hover {
           font-size: 15px;
+          font-family: "AvenirHeavy";
           color: #222222; } }
 
 .designers-box {
@@ -593,15 +528,15 @@ a {
     align-items: center;
     margin-bottom: 54px; }
     .designers-box .designers-box-title h4 {
-      font-family: 'Avenir LT Pro 55 Heavy';
       font-size: 32px;
+      font-family: "AvenirHeavy";
       color: #222222; }
       @media screen and (max-width: 1080px) {
         .designers-box .designers-box-title h4 {
           font-size: 20px; } }
     .designers-box .designers-box-title h6 {
-      font-family: 'Avenir LT Pro 55 Heavy';
       font-size: 14px;
+      font-family: "AvenirHeavy";
       color: #222222; }
   .designers-box .designers-div {
     flex-wrap: wrap;
@@ -624,15 +559,15 @@ a {
         margin-top: 15px;
         max-width: 70px;
         text-align: center;
-        font-family: 'Avenir LT Pro Medium';
         font-size: 16px;
+        font-family: "AvenirMedium";
         color: #222222;
         cursor: pointer; }
       .designers-box .designers-div .designers-article h6 {
         margin-top: 10px;
         text-align: center;
-        font-family: 'Avenir LT Pro Book';
         font-size: 12px;
+        font-family: "AvenirBook";
         color: #222222; }
       .designers-box .designers-div .designers-article button {
         margin-top: 17px;
@@ -640,63 +575,67 @@ a {
         border: none;
         border-radius: 12px;
         border: 1px solid #D8D8D8;
-        font-family: 'Avenir LT Pro 55 Heavy';
         font-size: 14px;
+        font-family: "AvenirHeavy";
         color: #222222;
         background-color: #FFFFFF;
         cursor: pointer; }
       .designers-box .designers-div .designers-article .following {
         background-color: #E7E7E7; }
 
-.listBox-mainDiv {
+@media screen and (max-width: 1080px) {
+  .list-section {
+    margin-top: 20px; } }
+
+.list-section .listBox-mainDiv {
   justify-content: space-between;
   padding: 70px 0;
   border-bottom: 1px solid gray; }
   @media screen and (max-width: 1080px) {
-    .listBox-mainDiv {
+    .list-section .listBox-mainDiv {
       justify-content: center; } }
   @media screen and (max-width: 640px) {
-    .listBox-mainDiv {
+    .list-section .listBox-mainDiv {
       flex-direction: column; } }
   @media screen and (max-width: 640px) {
-    .listBox-mainDiv .list-box {
+    .list-section .listBox-mainDiv .list-box {
       justify-content: center; } }
-  .listBox-mainDiv .list-box img {
+  .list-section .listBox-mainDiv .list-box img {
     display: none; }
     @media screen and (max-width: 1080px) {
-      .listBox-mainDiv .list-box img {
+      .list-section .listBox-mainDiv .list-box img {
         display: flex;
         cursor: pointer;
         padding-right: 10px;
         margin-bottom: 50px; } }
   @media screen and (max-width: 1080px) {
-    .listBox-mainDiv .list-box {
+    .list-section .listBox-mainDiv .list-box {
       display: flex; } }
   @media screen and (max-width: 1080px) {
-    .listBox-mainDiv .list-box h6 {
+    .list-section .listBox-mainDiv .list-box h6 {
       margin-bottom: 10px; } }
   @media screen and (max-width: 1080px) {
-    .listBox-mainDiv .list-box img {
+    .list-section .listBox-mainDiv .list-box img {
       max-height: 15px; } }
   @media screen and (max-width: 1080px) {
-    .listBox-mainDiv .list-box .list-box-ul {
+    .list-section .listBox-mainDiv .list-box .list-box-ul {
       display: none; } }
-  .listBox-mainDiv .list-box .list-box-ul h6 {
-    font-family: 'Avenir LT Pro 55 Heavy';
+  .list-section .listBox-mainDiv .list-box .list-box-ul h6 {
     font-size: 16px;
+    font-family: "AvenirHeavy";
     color: #222222;
     margin-bottom: 40px; }
-  .listBox-mainDiv .list-box .list-box-ul .list-box-a {
-    font-family: 'Avenir LT Pro Book';
+  .list-section .listBox-mainDiv .list-box .list-box-ul .list-box-a {
     font-size: 16px;
+    font-family: "AvenirBook";
     color: #222222;
     line-height: 2.5; }
-  .listBox-mainDiv .list-box .list-box-ul .inside-box-ul .inside-box-a {
-    font-family: 'Avenir LT Pro Book';
+  .list-section .listBox-mainDiv .list-box .list-box-ul .inside-box-ul .inside-box-a {
     font-size: 16px;
+    font-family: "AvenirBook";
     color: #222222;
     line-height: 2.5; }
-  .listBox-mainDiv .list-box .list-box-ul .inside-margin {
+  .list-section .listBox-mainDiv .list-box .list-box-ul .inside-margin {
     margin: 40px 0; }
 
 .footer-div {
@@ -711,15 +650,15 @@ a {
     .footer-div .social-ul .social-img:hover {
       transform: scale(1.5); }
   .footer-div .footer-logo h4 {
-    font-family: 'Avenir LT Pro Book';
     font-size: 16px;
+    font-family: "AvenirBook";
     color: #222222; }
     @media screen and (max-width: 360px) {
       .footer-div .footer-logo h4 {
         font-size: 8px; } }
   .footer-div .footer-logo span {
-    font-family: 'Avenir LT Pro 65 Black';
     font-size: 16px;
+    font-family: "AvenirBlack";
     color: #222222; }
     @media screen and (max-width: 360px) {
       .footer-div .footer-logo span {
@@ -742,7 +681,7 @@ a {
     .product-div .table .table-tbody {
       width: 100%; }
       .product-div .table .table-tbody .table-th {
-        font-family: 'Avenir LT Pro 55 Heavy'; }
+        font-family: "AvenirHeavy"; }
         .product-div .table .table-tbody .table-th .icon {
           display: none; }
           @media screen and (max-width: 1080px) {
@@ -800,8 +739,8 @@ a {
                 text-decoration: underline;
                 color: #FF2288; } }
       .product-div .table .table-tbody .product-tr {
-        font-family: 'Avenir LT Pro 55 Heavy';
         font-size: 16px;
+        font-family: "AvenirHeavy";
         color: #AFAFAF; }
         .product-div .table .table-tbody .product-tr .responsive-td {
           display: none; }

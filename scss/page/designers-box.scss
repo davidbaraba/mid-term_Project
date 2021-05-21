@@ -4,26 +4,24 @@
     }
     background-color: #FAFAFA;
     .designers-box-title{
-        justify-content: space-between;
+        @include horizontal (space-between);
         align-items: center;
         margin-bottom: 54px;
         h4{
-            font-family: 'Avenir LT Pro 55 Heavy';
-            @include text-styles (32px, $black_color);
+            @include text-styles (32px, 'AvenirHeavy', $black_color);
             @media screen and (max-width: 1080px) {
                 font-size: 20px;
             }
         }
         h6{
-            font-family: 'Avenir LT Pro 55 Heavy';
-            @include text-styles (14px, $black_color);
+            @include text-styles (14px, 'AvenirHeavy', $black_color);
         }
     }
     .designers-div{
         flex-wrap: wrap;
-        justify-content: space-between;
+        @include horizontal (space-between);
         @media screen and (max-width: 1370px) {
-            justify-content: center;
+            @include horizontal (center);
         }
         .designers-article{
             display: flex;
@@ -41,15 +39,13 @@
                 margin-top: 15px;
                 max-width: 70px;
                 text-align: center;
-                font-family: 'Avenir LT Pro Medium';
-                @include text-styles (16px, $black_color);
+                @include text-styles (16px, 'AvenirMedium', $black_color);
                 cursor: pointer;
             }
             h6{
                 margin-top: 10px;
                 text-align: center;
-                font-family: 'Avenir LT Pro Book';
-                @include text-styles (12px, $black_color);
+                @include text-styles (12px, 'AvenirBook', $black_color);
             }
             button{
                 margin-top: 17px;
@@ -57,8 +53,7 @@
                 border: none;
                 border-radius: 12px;
                 border: 1px solid #D8D8D8;
-                font-family: 'Avenir LT Pro 55 Heavy';
-                @include text-styles (14px, $black_color);
+                @include text-styles (14px, 'AvenirHeavy', $black_color);
                 background-color: $white_color;
                 cursor: pointer;
             }
